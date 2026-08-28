@@ -1,0 +1,15 @@
+.env
+.env.local
+outputs/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+node_modules/
+dist/
+client/dist/
+client/node_modules/
+genesis_careerfit.db
+genesis_careerfit_test.db

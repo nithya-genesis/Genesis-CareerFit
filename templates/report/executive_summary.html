@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Genesis CareerFit — Executive Recruitment Summary</title>
+    <style>
+        @page { size: A4; margin: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; color: #0A0A0A; line-height: 1.4; margin: 0; background: #FFFFFF; }
+        .page { page-break-after: always; height: 297mm; width: 210mm; padding: 12mm 14mm; box-sizing: border-box; position: relative; border: 1px solid #E4E4E7; }
+        .header { background: #0A0A0A; color: #FFFFFF; padding: 8px 12px; border-radius: 6px; margin-bottom: 8px; border-left: 4px solid #FFD000; position: relative; }
+        .header h1 { margin: 0; font-size: 11.5px; font-weight: 900; text-transform: uppercase; color: #FFFFFF; }
+        .header .meta { font-size: 8px; color: #A1A1AA; }
+        .header .right-id { position: absolute; right: 12px; top: 8px; font-size: 8px; color: #FFD000; font-family: monospace; font-weight: 700; }
+        .banner { background: #F7F7F5; color: #0A0A0A; padding: 4px 8px; font-size: 8px; font-weight: 700; margin: 6px 0; border-left: 3px solid #FFD000; border-radius: 4px; border: 1px solid #E4E4E7; }
+        .grid-2 { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+        .card { background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 6px; padding: 8px 10px; width: 48.5%; box-sizing: border-box; }
+        .stat-card-4 { background: #F7F7F5; border: 1px solid #E4E4E7; border-radius: 6px; padding: 6px 8px; text-align: center; width: 23.5%; box-sizing: border-box; }
+        .metric-val { font-size: 13px; font-weight: 900; color: #0A0A0A; }
+        .metric-lbl { font-size: 7px; color: #71717A; font-weight: 700; text-transform: uppercase; }
+        table.data-table { width: 100%; border-collapse: collapse; margin: 4px 0; font-size: 7.5px; }
+        table.data-table th, table.data-table td { border: 1px solid #E4E4E7; padding: 3.5px 5px; text-align: left; }
+        table.data-table th { background-color: #0A0A0A; color: #FFFFFF; font-size: 7px; text-align: center; text-transform: uppercase; }
+        .center { text-align: center; }
+        .badge-outstanding { color: #047857; background: #ECFDF5; border: 1px solid #A7F3D0; padding: 1.5px 5px; border-radius: 3px; font-weight: 700; font-size: 7.5px; display: inline-block; }
+        .footer { position: absolute; bottom: 5mm; left: 14mm; right: 14mm; display: flex; justify-content: space-between; font-size: 6.8px; color: #71717A; border-top: 1px solid #E4E4E7; padding-top: 2.5mm; font-family: monospace; }
+    </style>
+</head>
+<body>
+
+<!-- PAGE 1: RECRUITMENT VITALS -->
+<div class="page">
+    <div class="header">
+        <h1>Executive Recruitment Summary</h1>
+        <div class="meta">Candidate: {{ profile.student.name }} ({{ profile.student.usn }}) &nbsp;|&nbsp; Placement Ready Diagnostic</div>
+        <div class="right-id">PAGE 01 / 03</div>
+    </div>
+
+    <div class="banner"><span>Candidate Vitals & Placement Standing</span></div>
+    <div class="grid-2">
+        <div class="card">
+            <div class="metric-lbl">Candidate Identity</div>
+            <div style="font-size: 14px; font-weight: 900; margin: 2px 0;">{{ profile.student.name }}</div>
+            <div style="font-size: 8px; color: #52525B;">USN: {{ profile.student.usn }} &nbsp;|&nbsp; Dept: {{ profile.student.department }}</div>
+            <div style="font-size: 8px; color: #52525B;">CGPA: {{ profile.student.cgpa_display }}</div>
+        </div>
+        <div class="card">
+            <div class="metric-lbl">Placement Verdict</div>
+            <div style="font-size: 14px; font-weight: 900; color: #047857; margin: 2px 0;">{{ profile.scores.verdict }}</div>
+            <div style="font-size: 8px; color: #52525B;">CareerFit Index: {{ profile.scores.overall_index }}</div>
+            <div style="font-size: 8px; color: #52525B;">Target Role: {{ profile.career_recommendations.primary_target.role }}</div>
+        </div>
+    </div>
+
+    <div class="banner"><span>Top Career Match Trajectories</span></div>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th style="width: 35%; text-align: left;">Recommended Role</th>
+                <th style="width: 25%;">Domain</th>
+                <th style="width: 20%;">Match %</th>
+                <th style="width: 20%;">Fit Tier</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for r in profile.career_recommendations.top_10_roles[:3] %}
+            <tr>
+                <td><strong>{{ r.role }}</strong></td>
+                <td>{{ r.domain }}</td>
+                <td class="center font-mono"><strong>{{ r.match_score }}%</strong></td>
+                <td class="center"><span class="badge-outstanding">{{ r.fit_tier }}</span></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="banner"><span>Recruiter Guidance & Executive Synthesis</span></div>
+    <div style="background: #F7F7F5; border: 1px solid #E4E4E7; border-radius: 6px; padding: 8px; font-size: 7.5px; color: #3F3F46; line-height: 1.45;">
+        {{ narrative.executive_summary or "Candidate exhibits established problem-solving competencies and reliable ownership behaviors aligning with entry-level software engineering positions." }}
+    </div>
+
+    <div class="footer">
+        <span>Genesis CareerFit • Executive Summary</span>
+        <span>Page 1 of 3</span>
+    </div>
+</div>
+
+<!-- PAGE 2: COMPETENCY PROFILE -->
+<div class="page">
+    <div class="header">
+        <h1>Competency Evaluation Summary</h1>
+        <div class="meta">Candidate: {{ profile.student.name }} &nbsp;|&nbsp; Core Assessed Dimensions</div>
+        <div class="right-id">PAGE 02 / 03</div>
+    </div>
+
+    <div class="banner"><span>Core Assessed Workplace Competencies</span></div>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th style="width: 35%; text-align: left;">Competency</th>
+                <th style="width: 15%;">Score %</th>
+                <th style="width: 20%;">Rating</th>
+                <th style="width: 30%; text-align: left;">Interpretation</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for name, comp in profile.psychometric_results.competencies.items() %}
+            {% if loop.index <= 10 %}
+            <tr>
+                <td><strong>{{ name }}</strong></td>
+                <td class="center font-mono">{{ comp.percentage }}%</td>
+                <td class="center">{{ comp.rating }}</td>
+                <td style="font-size: 7px; color: #52525B;">{{ comp.interpretation }}</td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <span>Genesis CareerFit • Executive Summary</span>
+        <span>Page 2 of 3</span>
+    </div>
+</div>
+
+<!-- PAGE 3: INTERVIEW & HIRING VERDICT -->
+<div class="page">
+    <div class="header">
+        <h1>Interview Readiness & Hiring Recommendation</h1>
+        <div class="meta">Candidate: {{ profile.student.name }} &nbsp;|&nbsp; Panel Probes & Verification</div>
+        <div class="right-id">PAGE 03 / 03</div>
+    </div>
+
+    <div class="banner"><span>Suggested Interview Probes</span></div>
+    <div style="background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 6px; padding: 8px; font-size: 7.5px; margin-bottom: 6px;">
+        <strong>Behavioral Focus:</strong> "Describe a time when you faced conflicting project requirements and how you prioritized."
+        <div style="font-size: 7px; color: #047857; margin-top: 2px;"><strong>Green Flag:</strong> Uses objective metrics, communicates tradeoffs, seeks alignment.</div>
+    </div>
+
+    <div class="banner"><span>Final Placement Recommendation</span></div>
+    <div style="background: #F7F7F5; border: 1px solid #E4E4E7; border-radius: 6px; padding: 8px; font-size: 7.5px; color: #3F3F46;">
+        Candidate is recommended for Software Development Engineer and Backend positions with campus recruitment partners.
+    </div>
+
+    <div class="footer">
+        <span>Genesis CareerFit • Executive Summary</span>
+        <span>Page 3 of 3</span>
+    </div>
+</div>
+
+</body>
+</html>

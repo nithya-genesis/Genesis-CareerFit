@@ -1,0 +1,12 @@
+{
+  "role_id": "SOFTWARE_ENGINEER",
+  "role_name": "Software Engineer / Developer",
+  "description": "Involves software design, algorithmic development, coding, and system maintenance.",
+  "required_competencies": {
+    "Analytical Thinking & Problem Solving": 70.0,
+    "Quality Orientation": 65.0,
+    "Learning Agility & Growth Mindset": 60.0
+  },
+  "preferred_technical_domains": ["Python", "SQL", "Coding", "Computer Fundamentals"],
+  "min_overall_employability": 65.0
+}

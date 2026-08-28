@@ -1,0 +1,30 @@
+<div class="page">
+  <div class="header-bar">
+    <div>
+      <div class="section-title">Multi-Dimensional Career Matching</div>
+      <div style="font-size: 8pt; color: #6B7280;">Top recommended career roles matched across branch and technical alignment</div>
+    </div>
+    <div style="font-size: 8pt; font-weight: bold; color: #0B0B0B;">SECTION 04</div>
+  </div>
+
+  <table class="table-custom">
+    <thead>
+      <tr>
+        <th>Matched Industry Role</th>
+        <th>Category</th>
+        <th>CareerFit Score</th>
+        <th>Readiness Tier</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for role in top_recommendations %}
+      <tr>
+        <td><strong>{{ role.role_name }}</strong></td>
+        <td>{{ role.category or 'Technology' }}</td>
+        <td><strong style="color: #0B0B0B;">{{ role.suitability_score }}/100</strong></td>
+        <td><span class="badge badge-success">{{ role.fit_level or 'Placement Ready' }}</span></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

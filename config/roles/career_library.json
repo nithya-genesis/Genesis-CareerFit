@@ -1,0 +1,4854 @@
+[
+  {
+    "role_id": "ROLE_001",
+    "role_name": "Software Engineer",
+    "category": "SOFTWARE & IT",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT",
+      "ECE"
+    ],
+    "technical_skills": [
+      "Python",
+      "DSA",
+      "Java"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_002",
+    "role_name": "Frontend Developer",
+    "category": "SOFTWARE & IT",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Web_Development",
+      "JavaScript"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_003",
+    "role_name": "Backend Developer",
+    "category": "SOFTWARE & IT",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Python",
+      "Java",
+      "SQL"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_004",
+    "role_name": "Full Stack Developer",
+    "category": "SOFTWARE & IT",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Web_Development",
+      "DSA"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_005",
+    "role_name": "DevOps Engineer",
+    "category": "SOFTWARE & IT",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Cloud_DevOps",
+      "Linux"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_006",
+    "role_name": "Cloud Engineer",
+    "category": "SOFTWARE & IT",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT",
+      "ECE"
+    ],
+    "technical_skills": [
+      "Cloud_DevOps",
+      "Networking"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_007",
+    "role_name": "QA / Automation Tester",
+    "category": "SOFTWARE & IT",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Python",
+      "Testing"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_008",
+    "role_name": "Data Analyst",
+    "category": "DATA",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT",
+      "ECE",
+      "Mechanical",
+      "Civil",
+      "EEE"
+    ],
+    "technical_skills": [
+      "SQL",
+      "Python",
+      "Aptitude_Quantitative"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_009",
+    "role_name": "BI Analyst",
+    "category": "DATA",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT",
+      "ECE",
+      "Mechanical",
+      "Civil"
+    ],
+    "technical_skills": [
+      "SQL",
+      "Power BI"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_010",
+    "role_name": "Data Engineer",
+    "category": "DATA",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "SQL",
+      "Python",
+      "Cloud_DevOps"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_011",
+    "role_name": "Data Scientist",
+    "category": "DATA",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Python",
+      "AIML",
+      "Statistics"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_012",
+    "role_name": "ML Engineer",
+    "category": "AI / ML",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "AIML",
+      "Python",
+      "DSA"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_013",
+    "role_name": "AI Engineer",
+    "category": "AI / ML",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "AIML",
+      "Python",
+      "PyTorch"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_014",
+    "role_name": "Computer Vision Engineer",
+    "category": "AI / ML",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT",
+      "ECE"
+    ],
+    "technical_skills": [
+      "AIML",
+      "Python",
+      "OpenCV"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_015",
+    "role_name": "NLP Engineer",
+    "category": "AI / ML",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "AIML",
+      "Python",
+      "Transformers"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_016",
+    "role_name": "SOC Analyst",
+    "category": "CYBERSECURITY",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "IT",
+      "ECE"
+    ],
+    "technical_skills": [
+      "Cybersecurity",
+      "Networking"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_017",
+    "role_name": "Security Engineer",
+    "category": "CYBERSECURITY",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "IT"
+    ],
+    "technical_skills": [
+      "Cybersecurity",
+      "Cloud_DevOps"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_018",
+    "role_name": "VLSI Design Engineer",
+    "category": "CORE ELECTRONICS",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "ECE_Embedded",
+      "Verilog"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_019",
+    "role_name": "Embedded Systems Engineer",
+    "category": "CORE ELECTRONICS",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "ECE_Embedded",
+      "C_Prog",
+      "IoT"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_020",
+    "role_name": "IoT Solutions Engineer",
+    "category": "CORE ELECTRONICS",
+    "eligible_departments": [
+      "ECE",
+      "EEE",
+      "CSE",
+      "AI & DS"
+    ],
+    "technical_skills": [
+      "IoT",
+      "Python",
+      "Sensors"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_021",
+    "role_name": "Mechanical Design Engineer",
+    "category": "CORE MECHANICAL",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Mechanical_Core",
+      "CAD"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_022",
+    "role_name": "Automotive Systems Engineer",
+    "category": "CORE MECHANICAL",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile"
+    ],
+    "technical_skills": [
+      "Mechanical_Core",
+      "Auto"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_023",
+    "role_name": "HVAC Design Engineer",
+    "category": "CORE MECHANICAL",
+    "eligible_departments": [
+      "Mechanical"
+    ],
+    "technical_skills": [
+      "Mechanical_Core",
+      "Thermal"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_024",
+    "role_name": "Production / Quality Engineer",
+    "category": "CORE MECHANICAL",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Manufacturing"
+    ],
+    "technical_skills": [
+      "Mechanical_Core",
+      "QA"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_025",
+    "role_name": "Structural Design Engineer",
+    "category": "CORE CIVIL",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Civil_Core",
+      "Structures"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_026",
+    "role_name": "Site / Construction Engineer",
+    "category": "CORE CIVIL",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Civil_Core",
+      "Surveying"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_027",
+    "role_name": "BIM Modeler",
+    "category": "CORE CIVIL",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Civil_Core",
+      "BIM"
+    ],
+    "behavioral_competencies": [
+      "Analytical Thinking & Problem Solving",
+      "Communication"
+    ],
+    "academic_relevance": 80.0
+  },
+  {
+    "role_id": "ROLE_028",
+    "role_name": "Software & It Specialized Role v28",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_029",
+    "role_name": "Mechanical & Advanced Manufacturing Role v29",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_030",
+    "role_name": "Infrastructure & Civil Tech Role v30",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_031",
+    "role_name": "Embedded & Hardware Specialized Role v31",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_032",
+    "role_name": "Software & It Specialized Role v32",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_033",
+    "role_name": "Mechanical & Advanced Manufacturing Role v33",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_034",
+    "role_name": "Infrastructure & Civil Tech Role v34",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_035",
+    "role_name": "Embedded & Hardware Specialized Role v35",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_036",
+    "role_name": "Software & It Specialized Role v36",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_037",
+    "role_name": "Mechanical & Advanced Manufacturing Role v37",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_038",
+    "role_name": "Infrastructure & Civil Tech Role v38",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_039",
+    "role_name": "Embedded & Hardware Specialized Role v39",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_040",
+    "role_name": "Software & It Specialized Role v40",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_041",
+    "role_name": "Mechanical & Advanced Manufacturing Role v41",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_042",
+    "role_name": "Infrastructure & Civil Tech Role v42",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_043",
+    "role_name": "Embedded & Hardware Specialized Role v43",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_044",
+    "role_name": "Software & It Specialized Role v44",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_045",
+    "role_name": "Mechanical & Advanced Manufacturing Role v45",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_046",
+    "role_name": "Infrastructure & Civil Tech Role v46",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_047",
+    "role_name": "Embedded & Hardware Specialized Role v47",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_048",
+    "role_name": "Software & It Specialized Role v48",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_049",
+    "role_name": "Mechanical & Advanced Manufacturing Role v49",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_050",
+    "role_name": "Infrastructure & Civil Tech Role v50",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_051",
+    "role_name": "Embedded & Hardware Specialized Role v51",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_052",
+    "role_name": "Software & It Specialized Role v52",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_053",
+    "role_name": "Mechanical & Advanced Manufacturing Role v53",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_054",
+    "role_name": "Infrastructure & Civil Tech Role v54",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_055",
+    "role_name": "Embedded & Hardware Specialized Role v55",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_056",
+    "role_name": "Software & It Specialized Role v56",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_057",
+    "role_name": "Mechanical & Advanced Manufacturing Role v57",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_058",
+    "role_name": "Infrastructure & Civil Tech Role v58",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_059",
+    "role_name": "Embedded & Hardware Specialized Role v59",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_060",
+    "role_name": "Software & It Specialized Role v60",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_061",
+    "role_name": "Mechanical & Advanced Manufacturing Role v61",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_062",
+    "role_name": "Infrastructure & Civil Tech Role v62",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_063",
+    "role_name": "Embedded & Hardware Specialized Role v63",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_064",
+    "role_name": "Software & It Specialized Role v64",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_065",
+    "role_name": "Mechanical & Advanced Manufacturing Role v65",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_066",
+    "role_name": "Infrastructure & Civil Tech Role v66",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_067",
+    "role_name": "Embedded & Hardware Specialized Role v67",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_068",
+    "role_name": "Software & It Specialized Role v68",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_069",
+    "role_name": "Mechanical & Advanced Manufacturing Role v69",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_070",
+    "role_name": "Infrastructure & Civil Tech Role v70",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_071",
+    "role_name": "Embedded & Hardware Specialized Role v71",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_072",
+    "role_name": "Software & It Specialized Role v72",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_073",
+    "role_name": "Mechanical & Advanced Manufacturing Role v73",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_074",
+    "role_name": "Infrastructure & Civil Tech Role v74",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_075",
+    "role_name": "Embedded & Hardware Specialized Role v75",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_076",
+    "role_name": "Software & It Specialized Role v76",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_077",
+    "role_name": "Mechanical & Advanced Manufacturing Role v77",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_078",
+    "role_name": "Infrastructure & Civil Tech Role v78",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_079",
+    "role_name": "Embedded & Hardware Specialized Role v79",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_080",
+    "role_name": "Software & It Specialized Role v80",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_081",
+    "role_name": "Mechanical & Advanced Manufacturing Role v81",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_082",
+    "role_name": "Infrastructure & Civil Tech Role v82",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_083",
+    "role_name": "Embedded & Hardware Specialized Role v83",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_084",
+    "role_name": "Software & It Specialized Role v84",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_085",
+    "role_name": "Mechanical & Advanced Manufacturing Role v85",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_086",
+    "role_name": "Infrastructure & Civil Tech Role v86",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_087",
+    "role_name": "Embedded & Hardware Specialized Role v87",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_088",
+    "role_name": "Software & It Specialized Role v88",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_089",
+    "role_name": "Mechanical & Advanced Manufacturing Role v89",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_090",
+    "role_name": "Infrastructure & Civil Tech Role v90",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_091",
+    "role_name": "Embedded & Hardware Specialized Role v91",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_092",
+    "role_name": "Software & It Specialized Role v92",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_093",
+    "role_name": "Mechanical & Advanced Manufacturing Role v93",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_094",
+    "role_name": "Infrastructure & Civil Tech Role v94",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_095",
+    "role_name": "Embedded & Hardware Specialized Role v95",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_096",
+    "role_name": "Software & It Specialized Role v96",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_097",
+    "role_name": "Mechanical & Advanced Manufacturing Role v97",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_098",
+    "role_name": "Infrastructure & Civil Tech Role v98",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_099",
+    "role_name": "Embedded & Hardware Specialized Role v99",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_100",
+    "role_name": "Software & It Specialized Role v100",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_101",
+    "role_name": "Mechanical & Advanced Manufacturing Role v101",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_102",
+    "role_name": "Infrastructure & Civil Tech Role v102",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_103",
+    "role_name": "Embedded & Hardware Specialized Role v103",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_104",
+    "role_name": "Software & It Specialized Role v104",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_105",
+    "role_name": "Mechanical & Advanced Manufacturing Role v105",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_106",
+    "role_name": "Infrastructure & Civil Tech Role v106",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_107",
+    "role_name": "Embedded & Hardware Specialized Role v107",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_108",
+    "role_name": "Software & It Specialized Role v108",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_109",
+    "role_name": "Mechanical & Advanced Manufacturing Role v109",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_110",
+    "role_name": "Infrastructure & Civil Tech Role v110",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_111",
+    "role_name": "Embedded & Hardware Specialized Role v111",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_112",
+    "role_name": "Software & It Specialized Role v112",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_113",
+    "role_name": "Mechanical & Advanced Manufacturing Role v113",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_114",
+    "role_name": "Infrastructure & Civil Tech Role v114",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_115",
+    "role_name": "Embedded & Hardware Specialized Role v115",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_116",
+    "role_name": "Software & It Specialized Role v116",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_117",
+    "role_name": "Mechanical & Advanced Manufacturing Role v117",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_118",
+    "role_name": "Infrastructure & Civil Tech Role v118",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_119",
+    "role_name": "Embedded & Hardware Specialized Role v119",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_120",
+    "role_name": "Software & It Specialized Role v120",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_121",
+    "role_name": "Mechanical & Advanced Manufacturing Role v121",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_122",
+    "role_name": "Infrastructure & Civil Tech Role v122",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_123",
+    "role_name": "Embedded & Hardware Specialized Role v123",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_124",
+    "role_name": "Software & It Specialized Role v124",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_125",
+    "role_name": "Mechanical & Advanced Manufacturing Role v125",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_126",
+    "role_name": "Infrastructure & Civil Tech Role v126",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_127",
+    "role_name": "Embedded & Hardware Specialized Role v127",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_128",
+    "role_name": "Software & It Specialized Role v128",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_129",
+    "role_name": "Mechanical & Advanced Manufacturing Role v129",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_130",
+    "role_name": "Infrastructure & Civil Tech Role v130",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_131",
+    "role_name": "Embedded & Hardware Specialized Role v131",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_132",
+    "role_name": "Software & It Specialized Role v132",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_133",
+    "role_name": "Mechanical & Advanced Manufacturing Role v133",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_134",
+    "role_name": "Infrastructure & Civil Tech Role v134",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_135",
+    "role_name": "Embedded & Hardware Specialized Role v135",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_136",
+    "role_name": "Software & It Specialized Role v136",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_137",
+    "role_name": "Mechanical & Advanced Manufacturing Role v137",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_138",
+    "role_name": "Infrastructure & Civil Tech Role v138",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_139",
+    "role_name": "Embedded & Hardware Specialized Role v139",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_140",
+    "role_name": "Software & It Specialized Role v140",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_141",
+    "role_name": "Mechanical & Advanced Manufacturing Role v141",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_142",
+    "role_name": "Infrastructure & Civil Tech Role v142",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_143",
+    "role_name": "Embedded & Hardware Specialized Role v143",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_144",
+    "role_name": "Software & It Specialized Role v144",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_145",
+    "role_name": "Mechanical & Advanced Manufacturing Role v145",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_146",
+    "role_name": "Infrastructure & Civil Tech Role v146",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_147",
+    "role_name": "Embedded & Hardware Specialized Role v147",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_148",
+    "role_name": "Software & It Specialized Role v148",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_149",
+    "role_name": "Mechanical & Advanced Manufacturing Role v149",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_150",
+    "role_name": "Infrastructure & Civil Tech Role v150",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_151",
+    "role_name": "Embedded & Hardware Specialized Role v151",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_152",
+    "role_name": "Software & It Specialized Role v152",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_153",
+    "role_name": "Mechanical & Advanced Manufacturing Role v153",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_154",
+    "role_name": "Infrastructure & Civil Tech Role v154",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_155",
+    "role_name": "Embedded & Hardware Specialized Role v155",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_156",
+    "role_name": "Software & It Specialized Role v156",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_157",
+    "role_name": "Mechanical & Advanced Manufacturing Role v157",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_158",
+    "role_name": "Infrastructure & Civil Tech Role v158",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_159",
+    "role_name": "Embedded & Hardware Specialized Role v159",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_160",
+    "role_name": "Software & It Specialized Role v160",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_161",
+    "role_name": "Mechanical & Advanced Manufacturing Role v161",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_162",
+    "role_name": "Infrastructure & Civil Tech Role v162",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_163",
+    "role_name": "Embedded & Hardware Specialized Role v163",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_164",
+    "role_name": "Software & It Specialized Role v164",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_165",
+    "role_name": "Mechanical & Advanced Manufacturing Role v165",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_166",
+    "role_name": "Infrastructure & Civil Tech Role v166",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_167",
+    "role_name": "Embedded & Hardware Specialized Role v167",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_168",
+    "role_name": "Software & It Specialized Role v168",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_169",
+    "role_name": "Mechanical & Advanced Manufacturing Role v169",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_170",
+    "role_name": "Infrastructure & Civil Tech Role v170",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_171",
+    "role_name": "Embedded & Hardware Specialized Role v171",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_172",
+    "role_name": "Software & It Specialized Role v172",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_173",
+    "role_name": "Mechanical & Advanced Manufacturing Role v173",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_174",
+    "role_name": "Infrastructure & Civil Tech Role v174",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_175",
+    "role_name": "Embedded & Hardware Specialized Role v175",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_176",
+    "role_name": "Software & It Specialized Role v176",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_177",
+    "role_name": "Mechanical & Advanced Manufacturing Role v177",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_178",
+    "role_name": "Infrastructure & Civil Tech Role v178",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_179",
+    "role_name": "Embedded & Hardware Specialized Role v179",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_180",
+    "role_name": "Software & It Specialized Role v180",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_181",
+    "role_name": "Mechanical & Advanced Manufacturing Role v181",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_182",
+    "role_name": "Infrastructure & Civil Tech Role v182",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_183",
+    "role_name": "Embedded & Hardware Specialized Role v183",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_184",
+    "role_name": "Software & It Specialized Role v184",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_185",
+    "role_name": "Mechanical & Advanced Manufacturing Role v185",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_186",
+    "role_name": "Infrastructure & Civil Tech Role v186",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_187",
+    "role_name": "Embedded & Hardware Specialized Role v187",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_188",
+    "role_name": "Software & It Specialized Role v188",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_189",
+    "role_name": "Mechanical & Advanced Manufacturing Role v189",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_190",
+    "role_name": "Infrastructure & Civil Tech Role v190",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_191",
+    "role_name": "Embedded & Hardware Specialized Role v191",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_192",
+    "role_name": "Software & It Specialized Role v192",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_193",
+    "role_name": "Mechanical & Advanced Manufacturing Role v193",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_194",
+    "role_name": "Infrastructure & Civil Tech Role v194",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_195",
+    "role_name": "Embedded & Hardware Specialized Role v195",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_196",
+    "role_name": "Software & It Specialized Role v196",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_197",
+    "role_name": "Mechanical & Advanced Manufacturing Role v197",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_198",
+    "role_name": "Infrastructure & Civil Tech Role v198",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_199",
+    "role_name": "Embedded & Hardware Specialized Role v199",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_200",
+    "role_name": "Software & It Specialized Role v200",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_201",
+    "role_name": "Mechanical & Advanced Manufacturing Role v201",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_202",
+    "role_name": "Infrastructure & Civil Tech Role v202",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_203",
+    "role_name": "Embedded & Hardware Specialized Role v203",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_204",
+    "role_name": "Software & It Specialized Role v204",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_205",
+    "role_name": "Mechanical & Advanced Manufacturing Role v205",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_206",
+    "role_name": "Infrastructure & Civil Tech Role v206",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_207",
+    "role_name": "Embedded & Hardware Specialized Role v207",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_208",
+    "role_name": "Software & It Specialized Role v208",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_209",
+    "role_name": "Mechanical & Advanced Manufacturing Role v209",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_210",
+    "role_name": "Infrastructure & Civil Tech Role v210",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_211",
+    "role_name": "Embedded & Hardware Specialized Role v211",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_212",
+    "role_name": "Software & It Specialized Role v212",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_213",
+    "role_name": "Mechanical & Advanced Manufacturing Role v213",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_214",
+    "role_name": "Infrastructure & Civil Tech Role v214",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_215",
+    "role_name": "Embedded & Hardware Specialized Role v215",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_216",
+    "role_name": "Software & It Specialized Role v216",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_217",
+    "role_name": "Mechanical & Advanced Manufacturing Role v217",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_218",
+    "role_name": "Infrastructure & Civil Tech Role v218",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_219",
+    "role_name": "Embedded & Hardware Specialized Role v219",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_220",
+    "role_name": "Software & It Specialized Role v220",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_221",
+    "role_name": "Mechanical & Advanced Manufacturing Role v221",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_222",
+    "role_name": "Infrastructure & Civil Tech Role v222",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_223",
+    "role_name": "Embedded & Hardware Specialized Role v223",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_224",
+    "role_name": "Software & It Specialized Role v224",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_225",
+    "role_name": "Mechanical & Advanced Manufacturing Role v225",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_226",
+    "role_name": "Infrastructure & Civil Tech Role v226",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_227",
+    "role_name": "Embedded & Hardware Specialized Role v227",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_228",
+    "role_name": "Software & It Specialized Role v228",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_229",
+    "role_name": "Mechanical & Advanced Manufacturing Role v229",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_230",
+    "role_name": "Infrastructure & Civil Tech Role v230",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_231",
+    "role_name": "Embedded & Hardware Specialized Role v231",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_232",
+    "role_name": "Software & It Specialized Role v232",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_233",
+    "role_name": "Mechanical & Advanced Manufacturing Role v233",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_234",
+    "role_name": "Infrastructure & Civil Tech Role v234",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_235",
+    "role_name": "Embedded & Hardware Specialized Role v235",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_236",
+    "role_name": "Software & It Specialized Role v236",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_237",
+    "role_name": "Mechanical & Advanced Manufacturing Role v237",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_238",
+    "role_name": "Infrastructure & Civil Tech Role v238",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_239",
+    "role_name": "Embedded & Hardware Specialized Role v239",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_240",
+    "role_name": "Software & It Specialized Role v240",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_241",
+    "role_name": "Mechanical & Advanced Manufacturing Role v241",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_242",
+    "role_name": "Infrastructure & Civil Tech Role v242",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_243",
+    "role_name": "Embedded & Hardware Specialized Role v243",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_244",
+    "role_name": "Software & It Specialized Role v244",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_245",
+    "role_name": "Mechanical & Advanced Manufacturing Role v245",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_246",
+    "role_name": "Infrastructure & Civil Tech Role v246",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_247",
+    "role_name": "Embedded & Hardware Specialized Role v247",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_248",
+    "role_name": "Software & It Specialized Role v248",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_249",
+    "role_name": "Mechanical & Advanced Manufacturing Role v249",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_250",
+    "role_name": "Infrastructure & Civil Tech Role v250",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_251",
+    "role_name": "Embedded & Hardware Specialized Role v251",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_252",
+    "role_name": "Software & It Specialized Role v252",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_253",
+    "role_name": "Mechanical & Advanced Manufacturing Role v253",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_254",
+    "role_name": "Infrastructure & Civil Tech Role v254",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_255",
+    "role_name": "Embedded & Hardware Specialized Role v255",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_256",
+    "role_name": "Software & It Specialized Role v256",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_257",
+    "role_name": "Mechanical & Advanced Manufacturing Role v257",
+    "category": "MECHANICAL & ADVANCED MANUFACTURING",
+    "eligible_departments": [
+      "Mechanical",
+      "Automobile",
+      "Aerospace"
+    ],
+    "technical_skills": [
+      "Additive Manufacturing",
+      "FEA Analysis"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_258",
+    "role_name": "Infrastructure & Civil Tech Role v258",
+    "category": "INFRASTRUCTURE & CIVIL TECH",
+    "eligible_departments": [
+      "Civil"
+    ],
+    "technical_skills": [
+      "Geotechnical Systems",
+      "Urban Planning"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_259",
+    "role_name": "Embedded & Hardware Specialized Role v259",
+    "category": "EMBEDDED & HARDWARE SPECIALIZED",
+    "eligible_departments": [
+      "ECE",
+      "EEE"
+    ],
+    "technical_skills": [
+      "Signal Processing",
+      "Microcontroller Architecture"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  },
+  {
+    "role_id": "ROLE_260",
+    "role_name": "Software & It Specialized Role v260",
+    "category": "SOFTWARE & IT SPECIALIZED",
+    "eligible_departments": [
+      "CSE",
+      "ISE",
+      "AI & DS",
+      "IT"
+    ],
+    "technical_skills": [
+      "Software Architecture",
+      "System Design"
+    ],
+    "behavioral_competencies": [
+      "Learning Agility & Growth Mindset",
+      "Quality Orientation"
+    ],
+    "academic_relevance": 75.0
+  }
+]

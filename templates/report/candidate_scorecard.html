@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Genesis CareerFit — Candidate One-Page Scorecard</title>
+    <style>
+        @page { size: A4; margin: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; color: #0A0A0A; line-height: 1.4; margin: 0; background: #FFFFFF; }
+        .page { height: 297mm; width: 210mm; padding: 12mm 14mm; box-sizing: border-box; position: relative; border: 1px solid #E4E4E7; }
+        .header { background: #0A0A0A; color: #FFFFFF; padding: 8px 12px; border-radius: 6px; margin-bottom: 8px; border-left: 4px solid #FFD000; position: relative; }
+        .header h1 { margin: 0; font-size: 11.5px; font-weight: 900; text-transform: uppercase; color: #FFFFFF; }
+        .header .right-id { position: absolute; right: 12px; top: 8px; font-size: 8px; color: #FFD000; font-family: monospace; font-weight: 700; }
+        .banner { background: #F7F7F5; color: #0A0A0A; padding: 4px 8px; font-size: 8px; font-weight: 700; margin: 6px 0; border-left: 3px solid #FFD000; border-radius: 4px; border: 1px solid #E4E4E7; }
+        .grid-3 { display: flex; justify-content: space-between; gap: 6px; margin-bottom: 6px; }
+        .card { background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 6px; padding: 6px 8px; width: 32%; box-sizing: border-box; text-align: center; }
+        .metric-val { font-size: 13px; font-weight: 900; color: #0A0A0A; }
+        .metric-lbl { font-size: 7px; color: #71717A; font-weight: 700; text-transform: uppercase; }
+        table.data-table { width: 100%; border-collapse: collapse; margin: 4px 0; font-size: 7.5px; }
+        table.data-table th, table.data-table td { border: 1px solid #E4E4E7; padding: 3.5px 5px; text-align: left; }
+        table.data-table th { background-color: #0A0A0A; color: #FFFFFF; font-size: 7px; text-align: center; text-transform: uppercase; }
+        .center { text-align: center; }
+        .badge-outstanding { color: #047857; background: #ECFDF5; border: 1px solid #A7F3D0; padding: 1.5px 5px; border-radius: 3px; font-weight: 700; font-size: 7.5px; display: inline-block; }
+        .footer { position: absolute; bottom: 5mm; left: 14mm; right: 14mm; display: flex; justify-content: space-between; font-size: 6.8px; color: #71717A; border-top: 1px solid #E4E4E7; padding-top: 2.5mm; font-family: monospace; }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <div class="header">
+        <h1>Candidate One-Page Scorecard</h1>
+        <div style="font-size: 8px; color: #A1A1AA;">{{ profile.student.name }} &nbsp;|&nbsp; USN: {{ profile.student.usn }} &nbsp;|&nbsp; Dept: {{ profile.student.department }}</div>
+        <div class="right-id">{{ profile.student.report_id }}</div>
+    </div>
+
+    <div class="grid-3">
+        <div class="card">
+            <div class="metric-lbl">CareerFit Index</div>
+            <div class="metric-val">{{ profile.scores.overall_index }}</div>
+        </div>
+        <div class="card">
+            <div class="metric-lbl">Academic CGPA</div>
+            <div class="metric-val">{{ profile.student.cgpa_display }}</div>
+        </div>
+        <div class="card">
+            <div class="metric-lbl">Target Role Fit</div>
+            <div class="metric-val" style="color: #047857;">{{ profile.career_recommendations.primary_target.match_score }}%</div>
+        </div>
+    </div>
+
+    <div class="banner"><span>Top Verified Competencies</span></div>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th style="width: 40%; text-align: left;">Competency</th>
+                <th style="width: 20%;">Score %</th>
+                <th style="width: 20%;">Rating</th>
+                <th style="width: 20%;">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for name, comp in profile.psychometric_results.competencies.items() %}
+            {% if loop.index <= 8 %}
+            <tr>
+                <td><strong>{{ name }}</strong></td>
+                <td class="center font-mono">{{ comp.percentage }}%</td>
+                <td class="center">{{ comp.rating }}</td>
+                <td class="center"><span class="badge-outstanding">Measured</span></td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="banner"><span>Primary Career Alignment</span></div>
+    <div style="background: #F7F7F5; border: 1px solid #E4E4E7; border-radius: 6px; padding: 8px; font-size: 7.5px; color: #3F3F46; margin-bottom: 6px;">
+        <strong>Recommended Trajectory:</strong> {{ profile.career_recommendations.primary_target.role }} ({{ profile.career_recommendations.primary_target.domain }})<br />
+        <strong>Readiness Standing:</strong> {{ profile.scores.verdict }}
+    </div>
+
+    <div class="banner"><span>Rapid Interview Probe</span></div>
+    <div style="background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 6px; padding: 8px; font-size: 7.5px;">
+        <strong>Question:</strong> "How do you decompose an ambiguous problem into verifiable components?"<br />
+        <span style="color: #047857; font-size: 7px;"><strong>Look for:</strong> Structured analytical thinking and edge-case handling.</span>
+    </div>
+
+    <div class="footer">
+        <span>Genesis CareerFit • Single-Page Candidate Scorecard</span>
+        <span>Page 1 of 1</span>
+    </div>
+</div>
+
+</body>
+</html>

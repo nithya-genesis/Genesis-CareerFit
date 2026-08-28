@@ -1,0 +1,12 @@
+{
+  "role_id": "AIML_ENGINEER",
+  "role_name": "AI / Machine Learning Engineer",
+  "description": "Designs, implements, and evaluates machine learning models, statistical systems, and analytical algorithms.",
+  "required_competencies": {
+    "Analytical Thinking & Problem Solving": 75.0,
+    "Quality Orientation": 70.0,
+    "Learning Agility & Growth Mindset": 65.0
+  },
+  "preferred_technical_domains": ["AIML", "Python", "Data Analytics"],
+  "min_overall_employability": 65.0
+}

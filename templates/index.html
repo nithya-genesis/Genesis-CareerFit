@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis CareerFit — Enterprise Placement & Employability Intelligence</title>
+    <style>
+        :root {
+            --bg-dark: #0B0B0B;
+            --sidebar-dark: #121212;
+            --panel-dark: #181818;
+            --border-dark: #262626;
+            --yellow-main: #F5C400;
+            --yellow-hover: #FFD21F;
+            --text-light: #F8FAFC;
+            --text-muted: #94A3B8;
+            --success-green: #16A34A;
+            --card-bg: #1E1E1E;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 260px;
+            background-color: var(--sidebar-dark);
+            border-right: 1px solid var(--border-dark);
+            display: flex;
+            flex-direction: column;
+            padding: 24px 16px;
+            flex-shrink: 0;
+        }
+
+        .brand-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-dark);
+            margin-bottom: 20px;
+        }
+
+        .brand-logo {
+            width: 34px;
+            height: 34px;
+            background-color: var(--yellow-main);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--bg-dark);
+            font-weight: 900;
+            font-size: 18px;
+        }
+
+        .brand-name {
+            font-size: 17px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: var(--yellow-main);
+        }
+
+        .brand-tagline {
+            font-size: 10px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            flex: 1;
+        }
+
+        .nav-item a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 14px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 13.5px;
+            font-weight: 500;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-item a:hover, .nav-item.active a {
+            background-color: rgba(245, 196, 0, 0.1);
+            color: var(--yellow-main);
+            font-weight: 600;
+        }
+
+        /* MAIN CONTENT */
+        .main-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+
+        .top-navbar {
+            height: 64px;
+            background-color: var(--sidebar-dark);
+            border-bottom: 1px solid var(--border-dark);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 32px;
+        }
+
+        .page-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-light);
+        }
+
+        .badge-live {
+            background-color: rgba(22, 163, 74, 0.2);
+            color: var(--success-green);
+            border: 1px solid var(--success-green);
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .content-area {
+            padding: 28px 32px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* METRIC CARDS */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .stat-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 18px;
+            border-top: 3px solid var(--yellow-main);
+        }
+
+        .stat-label {
+            font-size: 11.5px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--text-light);
+        }
+
+        /* WIZARD CONTAINER */
+        .card-panel {
+            background-color: var(--panel-dark);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 22px;
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .step-badge {
+            background-color: var(--yellow-main);
+            color: var(--bg-dark);
+            font-weight: 800;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+        }
+
+        .step-title {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .btn-primary {
+            background-color: var(--yellow-main);
+            color: var(--bg-dark);
+            font-weight: 700;
+            border: none;
+            padding: 12px 22px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-primary:hover { background-color: var(--yellow-hover); }
+
+        .btn-success {
+            background-color: var(--success-green);
+            color: white;
+            font-weight: 700;
+            border: none;
+            padding: 12px 24px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+
+        select, input[type="file"] {
+            width: 100%;
+            background-color: var(--bg-dark);
+            border: 1px solid var(--border-dark);
+            color: var(--text-light);
+            padding: 10px 12px;
+            border-radius: 6px;
+            font-size: 13.5px;
+        }
+
+        label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--yellow-main);
+            margin-bottom: 6px;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            border: 2px solid rgba(0,0,0,0.2);
+            border-radius: 50%;
+            border-top-color: #000;
+            animation: spin 0.8s linear infinite;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+        <div class="brand-box">
+            <div class="brand-logo">G</div>
+            <div>
+                <div class="brand-name">CAREERFIT</div>
+                <div class="brand-tagline">Genesis Intelligence</div>
+            </div>
+        </div>
+
+        <ul class="nav-menu">
+            <li class="nav-item active"><a href="#">📊 Dashboard</a></li>
+            <li class="nav-item"><a href="#uploadCard">📤 Assessment Upload</a></li>
+            <li class="nav-item"><a href="#discoverySection">🔍 Schema Discovery</a></li>
+            <li class="nav-item"><a href="#candidateSection">👤 Candidate Analytics</a></li>
+            <li class="nav-item"><a href="#">🎯 Career Matrix</a></li>
+            <li class="nav-item"><a href="#">📑 Reports Archive</a></li>
+            <li class="nav-item"><a href="#">⚙️ Platform Settings</a></li>
+        </ul>
+    </aside>
+
+    <!-- MAIN WRAPPER -->
+    <div class="main-wrapper">
+        <header class="top-navbar">
+            <div class="page-title">Executive Employability & Assessment Analytics</div>
+            <div class="badge-live">SYSTEM READY — GROQ ACTIVE</div>
+        </header>
+
+        <main class="content-area">
+            <!-- 5 STATS CARDS -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Candidates Ingested</div>
+                    <div class="stat-value" id="cardCandidates">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Evaluated Domains</div>
+                    <div class="stat-value" id="cardDomains">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Taxonomy Coverage</div>
+                    <div class="stat-value" id="cardCoverage">0%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Avg Employability</div>
+                    <div class="stat-value" id="cardEmployability">—</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Reports Generated</div>
+                    <div class="stat-value" id="cardReports">0</div>
+                </div>
+            </div>
+
+            <!-- STEP 1: UPLOAD DATASET -->
+            <div class="card-panel" id="uploadCard">
+                <div class="step-header">
+                    <span class="step-badge">STEP 1</span>
+                    <span class="step-title">Upload Multi-Domain Assessment Dataset</span>
+                </div>
+                <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 18px;">
+                    Upload candidate spreadsheets (CSV, XLS, XLSX) containing Psychometric SJT items, Technical scores (AIML, Python, SQL), or Aptitude metrics.
+                </p>
+                <form id="uploadForm">
+                    <div style="margin-bottom: 16px;">
+                        <input type="file" id="datasetFile" name="file" accept=".csv, .xls, .xlsx" required>
+                    </div>
+                    <button type="submit" class="btn-primary" id="btnUpload">Ingest & Inspect Dataset</button>
+                </form>
+            </div>
+
+            <!-- STEP 2 & 3: SCHEMA DISCOVERY & MAPPING -->
+            <div id="discoverySection" class="card-panel" style="display: none;">
+                <div class="step-header">
+                    <span class="step-badge">STEP 2</span>
+                    <span class="step-title">Automated Schema Discovery & Column Inspection</span>
+                </div>
+
+                <div class="grid-3" style="margin-bottom: 20px;">
+                    <div class="stat-card" style="border-top-color: #38BDF8;">
+                        <div class="stat-label">Total Columns Discovered</div>
+                        <div class="stat-value" id="metricCols">0</div>
+                    </div>
+                    <div class="stat-card" style="border-top-color: #38BDF8;">
+                        <div class="stat-label">SJT Item Columns (Q1..Q60)</div>
+                        <div class="stat-value" id="metricQuestions">0</div>
+                    </div>
+                    <div class="stat-card" style="border-top-color: #38BDF8;">
+                        <div class="stat-label">Domain Assessment Columns</div>
+                        <div class="stat-value" id="metricAssessments">0</div>
+                    </div>
+                </div>
+
+                <div class="step-header">
+                    <span class="step-badge">STEP 3</span>
+                    <span class="step-title">Confirm Candidate Identity & Mapping</span>
+                </div>
+
+                <form id="processForm">
+                    <div class="grid-2">
+                        <div>
+                            <label for="mapName">Candidate Name Field</label>
+                            <select id="mapName" name="candidate_name"></select>
+                        </div>
+                        <div>
+                            <label for="mapUSN">USN / Registration ID</label>
+                            <select id="mapUSN" name="usn"></select>
+                        </div>
+                        <div>
+                            <label for="mapCollege">College / Institution</label>
+                            <select id="mapCollege" name="college"></select>
+                        </div>
+                        <div>
+                            <label for="mapDept">Department / Branch</label>
+                            <select id="mapDept" name="department"></select>
+                        </div>
+                        <div>
+                            <label for="mapCGPA">Academic CGPA Field</label>
+                            <select id="mapCGPA" name="cgpa"></select>
+                        </div>
+                        <div>
+                            <label for="reportProfile">Report Generation Profile</label>
+                            <select id="reportProfile" name="report_profile">
+                                <option value="Executive Snapshot (2-Page)">Executive Snapshot — 2 Pages</option>
+                                <option value="Executive Summary (5-Page)" selected>Executive Summary — 5 Pages</option>
+                                <option value="Executive Career Dossier (20-Page)">Executive Career Dossier — 20 Pages</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 20px;">
+                        <button type="submit" class="btn-primary" id="btnProcess">Generate Batch CareerFit Reports</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- STEP 4: DOWNLOAD RESULT -->
+            <div id="downloadSection" class="card-panel" style="display: none; border-color: var(--success-green);">
+                <div class="step-header">
+                    <span class="step-badge" style="background-color: var(--success-green); color: white;">COMPLETE</span>
+                    <span class="step-title">Batch Report Generation & Archiving Complete</span>
+                </div>
+                <p style="color: var(--text-muted); font-size: 13.5px; margin-bottom: 18px;" id="statusSummaryText">
+                    All candidate reports generated and bundled successfully.
+                </p>
+                <a id="downloadZipBtn" href="#" class="btn-success">Download Genesis CareerFit Reports (.ZIP)</a>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        let ingestedFilePath = "";
+        let allColumns = [];
+
+        document.getElementById("uploadForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const fileInput = document.getElementById("datasetFile");
+            if (!fileInput.files.length) return alert("Please select a dataset file first.");
+
+            const btn = document.getElementById("btnUpload");
+            btn.innerHTML = '<span class="spinner"></span> Ingesting Dataset...';
+            btn.disabled = true;
+
+            const formData = new FormData();
+            formData.append("file", fileInput.files[0]);
+
+            try {
+                const res = await fetch("/api/upload", { method: "POST", body: formData });
+                const data = await res.json();
+
+                if (data.error) throw new Error(data.error);
+
+                ingestedFilePath = data.file_path;
+                const schema = data.schema;
+
+                allColumns = ["BLANK / NOT AVAILABLE"]
+                    .concat(schema.unmapped_columns || [])
+                    .concat(schema.question_columns || [])
+                    .concat(schema.potential_assessment_columns || [])
+                    .concat(Object.values(schema.discovered_identity || {}));
+
+                allColumns = [...new Set(allColumns)];
+
+                document.getElementById("metricCols").textContent = allColumns.length - 1;
+                document.getElementById("metricQuestions").textContent = (schema.question_columns || []).length;
+                document.getElementById("metricAssessments").textContent = (schema.potential_assessment_columns || []).length;
+
+                document.getElementById("cardDomains").textContent = (schema.potential_assessment_columns || []).length + ((schema.question_columns || []).length > 0 ? 1 : 0);
+
+                populateDropdown("mapName", schema.discovered_identity.candidate_name);
+                populateDropdown("mapUSN", schema.discovered_identity.usn);
+                populateDropdown("mapCollege", schema.discovered_identity.college);
+                populateDropdown("mapDept", schema.discovered_identity.department);
+                populateDropdown("mapCGPA", schema.discovered_identity.cgpa);
+
+                document.getElementById("discoverySection").style.display = "block";
+                document.getElementById("discoverySection").scrollIntoView({ behavior: "smooth" });
+            } catch (err) {
+                alert("Upload failed: " + err.message);
+            } finally {
+                btn.innerHTML = "Ingest & Inspect Dataset";
+                btn.disabled = false;
+            }
+        });
+
+        function populateDropdown(selectId, autoSelected) {
+            const select = document.getElementById(selectId);
+            select.innerHTML = "";
+            allColumns.forEach(col => {
+                const opt = document.createElement("option");
+                opt.value = col;
+                opt.textContent = col;
+                if (col === autoSelected) opt.selected = true;
+                select.appendChild(opt);
+            });
+        }
+
+        document.getElementById("processForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById("btnProcess");
+            btn.innerHTML = '<span class="spinner"></span> Generating Analytics & Packaging ZIP...';
+            btn.disabled = true;
+
+            const payload = {
+                file_path: ingestedFilePath,
+                user_mapping: {
+                    candidate_name: document.getElementById("mapName").value,
+                    usn: document.getElementById("mapUSN").value,
+                    college: document.getElementById("mapCollege").value,
+                    department: document.getElementById("mapDept").value,
+                    cgpa: document.getElementById("mapCGPA").value
+                },
+                report_mode: document.getElementById("reportProfile").value
+            };
+
+            try {
+                const res = await fetch("/api/process", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload)
+                });
+                const data = await res.json();
+
+                if (!data.success) throw new Error((data.errors || []).join(", ") || "Batch execution error");
+
+                document.getElementById("cardCandidates").textContent = data.total_processed;
+                document.getElementById("cardReports").textContent = data.total_processed;
+
+                document.getElementById("statusSummaryText").textContent = 
+                    `Successfully generated ${data.total_processed} candidate report(s) bundled in isolated job [${data.job_id}].`;
+                document.getElementById("downloadZipBtn").href = `/download/${data.job_id}`;
+                document.getElementById("downloadSection").style.display = "block";
+                document.getElementById("downloadSection").scrollIntoView({ behavior: "smooth" });
+            } catch (err) {
+                alert("Processing failed: " + err.message);
+            } finally {
+                btn.innerHTML = "Generate Batch CareerFit Reports";
+                btn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>

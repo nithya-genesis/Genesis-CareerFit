@@ -1,0 +1,143 @@
+{
+  "assessment_id": "PSYCHOMETRIC_SJT_V1",
+  "name": "Psychometric & Situational Judgment Assessment",
+  "total_questions": 60,
+  "max_score": 180,
+  "min_score": 60,
+  "scoring_map": {
+    "A": 3,
+    "B": 2,
+    "C": 1
+  },
+  "competencies": {
+    "Emotional Intelligence": {
+      "questions": ["Q1", "Q2", "Q3"],
+      "max_score": 9,
+      "measures": "Empathy, Emotional regulation, Understanding others",
+      "workplace_importance": "High EI employees collaborate better, resolve conflicts, build relationships with clients, and become effective leaders."
+    },
+    "Integrity & Ethics": {
+      "questions": ["Q4", "Q5"],
+      "max_score": 6,
+      "measures": "Honesty, Compliance, Ethical judgment",
+      "workplace_importance": "Integrity builds organizational trust. Most companies consider integrity non-negotiable because ethical behavior protects reputation, compliance, and customer confidence."
+    },
+    "Accountability & Ownership": {
+      "questions": ["Q6", "Q7", "Q8", "Q57", "Q60"],
+      "max_score": 15,
+      "measures": "Accepting mistakes, Responsibility, Ownership",
+      "workplace_importance": "Employees who take ownership solve problems faster and reduce the need for supervision."
+    },
+    "Work Commitment & Reliability": {
+      "questions": ["Q9", "Q10", "Q11", "Q12"],
+      "max_score": 12,
+      "measures": "Consistency, Work ethic, Punctuality",
+      "workplace_importance": "Reliable employees meet deadlines consistently and can be trusted with important responsibilities."
+    },
+    "Learning Agility & Growth Mindset": {
+      "questions": ["Q13", "Q14", "Q15", "Q32", "Q49"],
+      "max_score": 15,
+      "measures": "Adaptability, Curiosity, Continuous learning",
+      "workplace_importance": "Technology changes rapidly. Organizations value employees who can learn new systems quickly and keep their skills current."
+    },
+    "Stress Management & Resilience": {
+      "questions": ["Q16", "Q18", "Q50", "Q52", "Q53"],
+      "max_score": 15,
+      "measures": "Calmness, Resilience, Pressure handling",
+      "workplace_importance": "High-pressure environments require employees who can maintain performance without becoming overwhelmed."
+    },
+    "Time Management & Organization": {
+      "questions": ["Q17", "Q25", "Q26", "Q27"],
+      "max_score": 12,
+      "measures": "Planning, Prioritization, Organization",
+      "workplace_importance": "Strong time management improves productivity, reduces missed deadlines, and enhances overall team performance."
+    },
+    "Achievement Orientation": {
+      "questions": ["Q19", "Q20", "Q51", "Q54"],
+      "max_score": 12,
+      "measures": "Ambition, Persistence, Goal focus",
+      "workplace_importance": "Achievement-oriented employees consistently strive to exceed expectations and contribute to organizational growth."
+    },
+    "Customer Orientation": {
+      "questions": ["Q22", "Q23"],
+      "max_score": 6,
+      "measures": "Service mindset, Understanding customer needs",
+      "workplace_importance": "Customer-focused employees improve satisfaction, retention, and organizational reputation."
+    },
+    "Communication": {
+      "questions": ["Q24", "Q48"],
+      "max_score": 6,
+      "measures": "Timely communication, Professional communication",
+      "workplace_importance": "Clear communication minimizes misunderstandings, improves teamwork, and strengthens stakeholder relationships."
+    },
+    "Leadership & Influence": {
+      "questions": ["Q28", "Q30"],
+      "max_score": 6,
+      "measures": "Initiative, Motivating others",
+      "workplace_importance": "Leadership is valuable at every level, not just in managerial roles. Employees who positively influence others drive team performance."
+    },
+    "Decision Making": {
+      "questions": ["Q29", "Q39", "Q55"],
+      "max_score": 9,
+      "measures": "Judgment, Risk assessment, Accuracy under pressure",
+      "workplace_importance": "Effective decision-makers balance speed and quality, reducing errors and improving business outcomes."
+    },
+    "Adaptability": {
+      "questions": ["Q31", "Q33"],
+      "max_score": 6,
+      "measures": "Flexibility, Openness to change",
+      "workplace_importance": "Adaptable employees adjust quickly to changing priorities, technologies, and business environments."
+    },
+    "Quality Orientation": {
+      "questions": ["Q34", "Q35", "Q36"],
+      "max_score": 9,
+      "measures": "Attention to detail, Documentation, Reviewing work",
+      "workplace_importance": "Attention to quality reduces defects, improves customer satisfaction, and supports operational excellence."
+    },
+    "Analytical Thinking & Problem Solving": {
+      "questions": ["Q37", "Q38", "Q56"],
+      "max_score": 9,
+      "measures": "Critical thinking, Information analysis, Logical reasoning",
+      "workplace_importance": "Analytical employees make evidence-based decisions and solve complex business problems effectively."
+    },
+    "Innovation": {
+      "questions": ["Q40", "Q41", "Q42"],
+      "max_score": 9,
+      "measures": "Creativity, Process improvement, Continuous improvement",
+      "workplace_importance": "Innovation drives efficiency, competitiveness, and long-term organizational success."
+    },
+    "Teamwork & Collaboration": {
+      "questions": ["Q43", "Q44", "Q45"],
+      "max_score": 9,
+      "measures": "Knowledge sharing, Cooperation, Supporting others",
+      "workplace_importance": "Collaborative employees contribute to higher-performing teams and stronger organizational culture."
+    },
+    "Conflict Resolution": {
+      "questions": ["Q46", "Q47"],
+      "max_score": 6,
+      "measures": "Managing disagreements, Mediation",
+      "workplace_importance": "Constructive conflict management maintains healthy relationships and prevents workplace disruption."
+    },
+    "Organizational Commitment": {
+      "questions": ["Q58", "Q59"],
+      "max_score": 6,
+      "measures": "Loyalty, Alignment with organizational goals",
+      "workplace_importance": "Committed employees demonstrate engagement, align their work with strategic objectives, and contribute to organizational success."
+    }
+  },
+  "rating_scale": [
+    {"range": [90, 100], "rating": "Outstanding"},
+    {"range": [80, 89.99], "rating": "Excellent"},
+    {"range": [70, 79.99], "rating": "Strong"},
+    {"range": [60, 69.99], "rating": "Competent"},
+    {"range": [50, 59.99], "rating": "Developing"},
+    {"range": [0, 49.99], "rating": "Needs Significant Development"}
+  ],
+  "employability_index_scale": [
+    {"range": [90, 100], "interpretation": "Highly Employable"},
+    {"range": [80, 89.99], "interpretation": "Placement Ready"},
+    {"range": [70, 79.99], "interpretation": "Good Potential"},
+    {"range": [60, 69.99], "interpretation": "Needs Skill Development"},
+    {"range": [0, 59.99], "interpretation": "Significant Development Required"}
+  ]
+}

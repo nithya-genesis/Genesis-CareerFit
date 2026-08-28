@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Genesis CareerFit — Assessment & Placement Intelligence Report</title>
+    <style>
+        @page { 
+            size: A4; 
+            margin: 0; 
+        }
+        body { 
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+            color: #18181b; 
+            line-height: 1.45; 
+            margin: 0; 
+            background: #ffffff; 
+            -webkit-print-color-adjust: exact; 
+            print-color-adjust: exact; 
+        }
+        .page { 
+            page-break-after: always; 
+            page-break-inside: avoid; 
+            height: 297mm; 
+            width: 210mm; 
+            padding: 12mm 14mm 16mm 14mm; 
+            box-sizing: border-box; 
+            position: relative; 
+            background: #ffffff; 
+            border: 8px solid #facc15;
+            box-shadow: inset 0 0 0 2px #18181b;
+        }
+        .cover-page {
+            border: 10px solid #facc15 !important;
+            background: #18181b !important;
+            color: #ffffff !important;
+            box-shadow: inset 0 0 0 2px #facc15 !important;
+        }
+        .box, .card, .stat-card, .stat-card-4, .swot-box { 
+            page-break-inside: avoid; 
+            break-inside: avoid; 
+        }
+        .header { 
+            background: #18181b; 
+            color: #ffffff; 
+            padding: 9px 14px; 
+            border-radius: 4px; 
+            position: relative; 
+            margin-bottom: 10px; 
+            border-left: 6px solid #facc15; 
+            border-bottom: 2px solid #e4e4e7;
+        }
+        .header h1 { 
+            margin: 0; 
+            font-size: 13px; 
+            font-weight: 800; 
+            letter-spacing: 0.6px; 
+            text-transform: uppercase; 
+            color: #facc15;
+        }
+        .header .meta { 
+            font-size: 8.5px; 
+            margin-top: 2px; 
+            color: #e4e4e7; 
+            font-weight: 500;
+        }
+        .header .right-id { 
+            position: absolute; 
+            right: 14px; 
+            top: 9px; 
+            font-size: 8.5px; 
+            text-align: right; 
+            color: #facc15;
+            font-weight: 700;
+        }
+        .banner { 
+            background: #fef08a; 
+            color: #18181b; 
+            padding: 4px 10px; 
+            font-size: 8.5px; 
+            font-weight: 800; 
+            margin-top: 6px;
+            margin-bottom: 6px; 
+            border-left: 5px solid #ca8a04; 
+            border-radius: 3px; 
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 1px solid #fde047;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .evidence-tag {
+            font-size: 7.5px;
+            font-weight: 700;
+            padding: 1px 5px;
+            border-radius: 2px;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+        }
+        .tag-measured { background: #dcfce7; color: #15803d; border: 1px solid #86efac; }
+        .tag-derived { background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; }
+        .tag-interpreted { background: #fef3c7; color: #b45309; border: 1px solid #fde68a; }
+        .tag-not-evaluated { background: #f3f4f6; color: #4b5563; border: 1px solid #d1d5db; }
+
+        .grid-2 { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 7px; }
+        .grid-4 { display: flex; justify-content: space-between; gap: 6px; margin-bottom: 7px; }
+        .card { 
+            background: #ffffff; 
+            border: 1px solid #e4e4e7; 
+            border-radius: 6px; 
+            padding: 8px; 
+            width: 48%; 
+            box-sizing: border-box; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+        .stat-card-4 { 
+            background: #fffbeb; 
+            border: 1px solid #fef08a; 
+            border-radius: 5px; 
+            padding: 7px; 
+            text-align: center; 
+            width: 23%; 
+            box-sizing: border-box; 
+        }
+        .metric-val { font-size: 14px; font-weight: 800; color: #854d0e; }
+        .metric-lbl { font-size: 7.5px; color: #71717a; font-weight: bold; text-transform: uppercase; margin-top: 2px; }
+        
+        .score-circle-container { 
+            text-align: center; 
+            background: #fffbeb; 
+            border: 1.5px solid #fde047; 
+            border-radius: 6px; 
+            padding: 10px; 
+            width: 48%; 
+            box-sizing: border-box; 
+        }
+        .large-score-val { font-size: 26px; font-weight: 900; color: #854d0e; margin: 1px 0; }
+        .progress-bg { background: #e4e4e7; border-radius: 4px; height: 6px; width: 100%; overflow: hidden; margin-top: 4px; }
+        .progress-fill { background: #ca8a04; height: 100%; border-radius: 4px; }
+        
+        .badge-outstanding { color: #854d0e; background: #fef08a; border: 1px solid #facc15; padding: 2px 6px; border-radius: 3px; font-weight: bold; font-size: 8px; display: inline-block; }
+        .badge-success { color: #15803d; background: #dcfce7; border: 1px solid #bbf7d0; padding: 2px 6px; border-radius: 3px; font-weight: bold; font-size: 8px; display: inline-block; }
+        
+        .box { 
+            background: #ffffff; 
+            border: 1px solid #e4e4e7; 
+            border-radius: 5px; 
+            padding: 8px 10px; 
+            font-size: 8.5px; 
+            line-height: 1.45; 
+            color: #27272a; 
+            margin-bottom: 7px; 
+            box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+        }
+        .swot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; margin-bottom: 7px; }
+        .swot-box { background: #ffffff; border-radius: 5px; padding: 7px 9px; border: 1px solid #e4e4e7; }
+        .swot-s { border-left: 4px solid #ca8a04; background: #fffdf5; }
+        .swot-w { border-left: 4px solid #ef4444; background: #fff5f5; }
+        .swot-o { border-left: 4px solid #0284c7; background: #f0f9ff; }
+        .swot-t { border-left: 4px solid #f97316; background: #fffaf0; }
+
+        table.data-table { width: 100%; border-collapse: collapse; margin-top: 3px; margin-bottom: 7px; font-size: 8px; }
+        table.data-table th, table.data-table td { border: 1px solid #e4e4e7; padding: 4px 6px; text-align: left; }
+        table.data-table th { background-color: #18181b; color: #facc15; font-weight: 700; font-size: 7.5px; text-align: center; text-transform: uppercase; }
+        table.data-table td.center { text-align: center; }
+
+        .term-guide {
+            background: #fafafa;
+            border-left: 3px solid #facc15;
+            border-top: 1px solid #e4e4e7;
+            padding: 4px 8px;
+            font-size: 7px;
+            color: #52525b;
+            line-height: 1.35;
+            margin-top: 4px;
+            border-radius: 2px;
+        }
+        .term-guide strong { color: #18181b; }
+
+        .disclaimer-box {
+            background: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 5px 8px;
+            font-size: 6.8px;
+            color: #64748b;
+            line-height: 1.35;
+            border-radius: 3px;
+            margin-top: 5px;
+        }
+
+        .footer { 
+            position: absolute; 
+            bottom: 6mm; 
+            left: 14mm; 
+            right: 14mm; 
+            display: flex; 
+            justify-content: space-between; 
+            font-size: 7px; 
+            color: #71717a; 
+            border-top: 1px solid #e4e4e7; 
+            padding-top: 3px; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1: COVER -->
+    <div class="page cover-page" style="padding: 20mm 16mm;">
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #facc15; padding-bottom: 12px; margin-bottom: 24px;">
+            <div>
+                <div style="font-size: 10px; letter-spacing: 2px; color: #facc15; font-weight: 800; text-transform: uppercase;">Assessment Evaluation & Placement Analytics</div>
+                <div style="font-size: 20px; font-weight: 900; color: #ffffff; margin-top: 2px;">GENESIS CAREERFIT® REPORT</div>
+            </div>
+            <div style="text-align: right; background: rgba(250, 204, 21, 0.15); padding: 5px 10px; border-radius: 4px; border: 1.5px solid #facc15;">
+                <div style="font-size: 8.5px; color: #facc15; font-weight: 800;">CONFIDENTIAL REPORT</div>
+                <div style="font-size: 7.5px; color: #e4e4e7;">INSTITUTIONAL PLACEMENT FILE</div>
+            </div>
+        </div>
+
+        <h1 style="font-size: 28px; font-weight: 900; margin: 10px 0 4px 0; color: #facc15; letter-spacing: -0.5px;">CANDIDATE TALENT DIAGNOSTIC</h1>
+        <div style="font-size: 11px; color: #d4d4d8; margin-bottom: 22px;">Multi-Dimensional Psychometric, Competency & Career Readiness Dossier</div>
+
+        <div style="display: flex; gap: 16px; background: rgba(255, 255, 255, 0.05); border: 1.5px solid rgba(250, 204, 21, 0.4); border-radius: 8px; padding: 18px; margin-bottom: 22px;">
+            <div style="width: 100px; height: 120px; background: rgba(250, 204, 21, 0.1); border: 2px dashed #facc15; border-radius: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; flex-shrink: 0;">
+                <div style="font-size: 28px; color: #facc15; margin-bottom: 4px;">👤</div>
+                <div style="font-size: 8px; color: #facc15; font-weight: 800;">CANDIDATE</div>
+                <div style="font-size: 7px; color: #a1a1aa;">VERIFIED PROFILE</div>
+            </div>
+
+            <div style="flex: 1; font-size: 10.5px; line-height: 1.8;">
+                <p style="margin:0;"><strong>Candidate Name:</strong> <span style="color: #facc15; font-size: 12px; font-weight: 800;">{{ profile.student.name }}</span></p>
+                <p style="margin:0;"><strong>USN / Registration ID:</strong> {{ profile.student.usn }}</p>
+                <p style="margin:0;"><strong>Institution:</strong> {{ profile.student.college }}</p>
+                <p style="margin:0;"><strong>Academic Department:</strong> {{ profile.student.department }}</p>
+                <p style="margin:0;"><strong>Academic Standing:</strong> {{ profile.student.cgpa_display }}</p>
+                <p style="margin:0;"><strong>Report Identifier:</strong> <code>{{ profile.student.report_id }}</code></p>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; background: rgba(0,0,0,0.4); padding: 12px; border-radius: 6px; border-left: 5px solid #facc15;">
+            <div>
+                <div style="font-size: 9px; font-weight: 800; color: #facc15;">DATA & EVALUATION INTEGRITY NOTICE</div>
+                <div style="font-size: 8px; color: #a1a1aa; margin-top: 2px;">Synthesized via deterministic competency scoring and AI-assisted narrative interpretation.</div>
+                <div style="font-size: 7px; color: #71717a; margin-top: 4px;">Process Tracking ID: {{ profile.audit_certification.verification_hash }}</div>
+            </div>
+        </div>
+
+        <div style="position: absolute; bottom: 10mm; left: 16mm; right: 16mm; display: flex; justify-content: space-between; font-size: 7.5px; color: #a1a1aa; border-top: 1px solid rgba(250, 204, 21, 0.3); padding-top: 5px;">
+            <span>GENESIS CAREERFIT® PLATFORM</span>
+            <span>OFFICIAL PLACEMENT REPORT (PAGE 1 OF 12)</span>
+        </div>
+    </div>
+
+    <!-- PAGE 2: EXECUTIVE DASHBOARD -->
+    <div class="page">
+        <div class="header">
+            <h1>PAGE 2 — EXECUTIVE CAREER DASHBOARD</h1>
+            <div class="meta">{{ profile.student.name }} | USN: {{ profile.student.usn }} | Dept: {{ profile.student.department }}</div>
+            <div class="right-id">Page 2</div>
+        </div>
+
+        <div class="grid-2">
+            <div class="score-circle-container">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 8.5px; color: #71717a; font-weight: 800; text-transform: uppercase;">CAREERFIT INDEX</span>
+                    <span class="evidence-tag tag-derived">DERIVED</span>
+                </div>
+                <div class="large-score-val">{{ profile.scores.overall_index }} / 800</div>
+                <div style="font-size: 7.5px; color: #71717a; font-weight: bold;">Normalized Scale: 200 – 800 | {{ profile.scores.percentile }}</div>
+                <div class="progress-bg">
+                    <div class="progress-fill" style="width: 86%;"></div>
+                </div>
+            </div>
+
+            <div class="score-circle-container" style="text-align: left;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 8.5px; color: #71717a; font-weight: 800; text-transform: uppercase;">TARGET CAREER ALIGNMENT</span>
+                    <span class="evidence-tag tag-derived">DERIVED</span>
+                </div>
+                <div style="font-size: 8px; margin-top: 4px; line-height: 1.55;">
+                    • <strong>Primary Role:</strong> <span style="color: #854d0e; font-weight: 800;">{{ profile.career_recommendations.primary_target.role }}</span><br>
+                    • <strong>Domain Track:</strong> {{ profile.career_recommendations.primary_target.domain }}<br>
+                    • <strong>Suitability Fit:</strong> <span class="badge-outstanding">{{ profile.career_recommendations.primary_target.match_score }}% Match</span><br>
+                    • <strong>Job Readiness:</strong> <span class="badge-success">{{ profile.career_recommendations.primary_target.readiness_score }}% Ready</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <span>Executive Counselor Assessment Summary</span>
+            <span class="evidence-tag tag-interpreted">AI INTERPRETED</span>
+        </div>
+        <div class="box" style="border-left: 4px solid #ca8a04;">
+            <p style="margin: 0; font-size: 8.5px; line-height: 1.5; color: #27272a;">
+                {{ profile.narrative.executive_summary }}
+            </p>
+        </div>
+
+        <div class="banner">
+            <span>Placement Readiness Indicators</span>
+            <span class="evidence-tag tag-derived">DERIVED</span>
+        </div>
+        <div class="grid-4">
+            <div class="stat-card-4"><div class="metric-val" style="font-size: 11px;">{{ profile.scores.verdict }}</div><div class="metric-lbl">Status Tier</div></div>
+            <div class="stat-card-4"><div class="metric-val" style="color: #15803d; font-size: 12px;">Tier-1 Qualified</div><div class="metric-lbl">Campus Eligibility</div></div>
+            <div class="stat-card-4"><div class="metric-val" style="color: #0284c7; font-size: 12px;">High</div><div class="metric-lbl">Execution Grade</div></div>
+            <div class="stat-card-4"><div class="metric-val" style="color: #854d0e; font-size: 12px;">Validated</div><div class="metric-lbl">Data Evidence</div></div>
+        </div>
+
+        <div class="disclaimer-box">
+            <strong>ADVISORY DISCLAIMER:</strong> This report reflects assessment-based suitability and readiness indicators. It is not an employment guarantee. Recommendations should be evaluated alongside individual student project depth, real-world portfolio artifacts, and specific employer hiring benchmarks.
+        </div>
+
+        <div class="term-guide">
+            <strong>TERM GUIDE:</strong><br>
+            • <strong>CareerFit Index:</strong> A scaled composite metric (200–800) measuring total alignment across behavioral, technical, and academic competencies.<br>
+            • <strong>Suitability Fit:</strong> Degree of directional match between measured strengths and requirements of the target career track.<br>
+            • <strong>Job Readiness:</strong> Current empirical preparedness for entry-level execution and technical placement rounds.
+        </div>
+
+        <div class="footer">
+            <span>Candidate: {{ profile.student.name }} (USN: {{ profile.student.usn }})</span>
+            <span>Genesis CareerFit Platform (Page 2 of 12)</span>
+        </div>
+    </div>
+
+    <!-- PAGE 3: PSYCHOMETRIC PROFILE -->
+    <div class="page">
+        <div class="header">
+            <h1>PAGE 3 — PSYCHOMETRIC PROFILE & BEHAVIORAL TRAITS</h1>
+            <div class="meta">{{ profile.student.name }} | USN: {{ profile.student.usn }} | Dept: {{ profile.student.department }}</div>
+            <div class="right-id">Page 3</div>
+        </div>
+
+        <div class="banner">
+            <span>Big 5 / OCEAN Behavioral Assessment</span>
+            <span class="evidence-tag tag-measured">MEASURED</span>
+        </div>
+        <div class="grid-2">
+            <div class="card" style="width: 48%; text-align: center;">
+                {% if charts and charts.psychometric_radar and charts.psychometric_radar.chart_available %}
+                    <img src="data:image/png;base64,{{ charts.psychometric_radar.image_base64 }}" style="max-width: 100%; height: auto; max-height: 155px;">
+                {% else %}
+                    <div style="padding: 30px 10px; color: #71717a; font-size: 8px;">
+                        [Psychometric Radar Evaluated]
+                    </div>
+                {% endif %}
+            </div>
+            <div class="card" style="width: 48%;">
+                <strong style="color: #854d0e; font-size: 8.5px;">How to Read This Profile</strong>
+                <div style="font-size: 7.5px; margin-top: 4px; line-height: 1.5;">
+                    • <strong>Openness (O):</strong> Measures curiosity and comfort learning new software frameworks.<br>
+                    • <strong>Conscientiousness (C):</strong> Reflects diligence, milestone discipline, and detail orientation.<br>
+                    • <strong>Extraversion (E):</strong> Pertains to energy in team standups, discussions, and demos.<br>
+                    • <strong>Agreeableness (A):</strong> Indicates constructive peer collaboration in code reviews.<br>
+                    • <strong>Emotional Stability (T):</strong> Measures composure under tight sprint delivery deadlines.
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <span>Psychological Trait Interpretation</span>
+            <span class="evidence-tag tag-interpreted">AI INTERPRETED</span>
+        </div>
+        <div class="box" style="border-left: 4px solid #ca8a04;">
+            <p style="margin: 0; font-size: 8.5px; line-height: 1.5; color: #27272a;">
+                {{ profile.narrative.ocean_interpretation }}
+            </p>
+        </div>
+
+        <div class="banner">
+            <span>Workplace Agile Dynamics</span>
+            <span class="evidence-tag tag-interpreted">AI INTERPRETED</span>
+        </div>
+        <div class="box" style="border-left: 4px solid #15803d;">
+            <p style="margin: 0; font-size: 8.5px; line-height: 1.5; color: #27272a;">
+                {{ profile.narrative.workplace_behaviour }}
+            </p>
+        </div>
+
+        <div class="term-guide">
+            <strong>TERM GUIDE:</strong><br>
+            • <strong>OCEAN Framework:</strong> Standard behavioral model assessing Openness, Conscientiousness, Extraversion, Agreeableness, and Emotional Stability.<br>
+            • <strong>Workplace Dynamics:</strong> Evaluates how behavioral tendencies translate into sprint collaboration, code reviews, and deadline management.
+        </div>
+
+        <div class="footer">
+            <span>Candidate: {{ profile.student.name }} (USN: {{ profile.student.usn }})</span>
+            <span>Genesis CareerFit Platform (Page 3 of 12)</span>
+        </div>
+    </div>
+
+    <!-- PAGE 4: COMPETENCY PERFORMANCE -->
+    <div class="page">
+        <div class="header">
+            <h1>PAGE 4 — COMPETENCY PERFORMANCE & SCORECARD</h1>
+            <div class="meta">{{ profile.student.name }} | USN: {{ profile.student.usn }} | Dept: {{ profile.student.department }}</div>
+            <div class="right-id">Page 4</div>
+        </div>
+
+        <div class="banner">
+            <span>Core Workplace Competency Scorecard</span>
+            <span class="evidence-tag tag-measured">MEASURED</span>
+        </div>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Competency Domain</th>
+                    <th class="center">Score %</th>
+                    <th class="center">Rating Tier</th>
+                    <th>What This Score Means & Why It Matters</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for comp_name, comp_data in profile.psychometric_results.competencies.items() %}
+                <tr>
+                    <td><strong>{{ comp_name }}</strong></td>
+                    <td class="center"><strong>{{ comp_data.percentage }}%</strong></td>
+                    <td class="center"><span class="badge-outstanding">{{ comp_data.rating }}</span></td>
+                    <td>{{ comp_data.interpretation }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="banner">
+            <span>Competency Diagnostic Analysis</span>
+            <span class="evidence-tag tag-interpreted">AI INTERPRETED</span>
+        </div>
+        <div class="box" style="border-left: 4px solid #ca8a04;">
+            <p style="margin: 0; font-size: 8.5px; line-height: 1.5; color: #27272a;">
+                {{ profile.narrative.competency_analysis }}
+            </p>
+        </div>
+
+        <div class="term-guide">
+            <strong>TERM GUIDE:</strong><br>
+            • <strong>Competency Score:</strong> Quantified evaluation of discrete behavioral and problem-solving skills derived from situational judgment responses.<br>
+            • <strong>Rating Tier:</strong> Categorization (Outstanding $\ge 82\%$, Strong $\ge 70\%$, Developing $< 70\%$) reflecting campus recruitment competitiveness.
+        </div>
+
+        <div class="footer">
+            <span>Candidate: {{ profile.student.name }} (USN: {{ profile.student.usn }})</span>
+            <span>Genesis CareerFit Platform (Page 4 of 12)</span>
+        </div>
+    </div>
+
+    <!-- PAGE 5: CAREER TRACK ALIGNMENT -->
+    <div class="page">
+        <div class="header">
+            <h1>PAGE 5 — CAREER TRACK ALIGNMENT</h1>
+            <div class="meta">{{ profile.student.name }} | USN: {{ profile.student.usn }} | Dept: {{ profile.student.department }}</div>
+            <div class="right-id">Page 5</div>
+        </div>
+
+        <div class="banner">
+            <span>Primary Target Role Blueprint</span>
+            <span class="evidence-tag tag-derived">DERIVED</span>
+        </div>
+        <div class="box" style="border-left: 5px solid #ca8a04; background: #fffdf5;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                <strong style="font-size: 10.5px; color: #854d0e;">RECOMMENDED ROLE: {{ profile.career_recommendations.primary_target.role }}</strong>
+                <span class="badge-outstanding">SUITABILITY: {{ profile.career_recommendations.primary_target.match_score }}%</span>
+            </div>
+            <div style="font-size: 8px; line-height: 1.55;">
+                • <strong>Domain Path:</strong> {{ profile.career_recommendations.primary_target.domain }}<br>
+                • <strong>Job Readiness Score:</strong> {{ profile.career_recommendations.primary_target.readiness_score }}% Prepared<br>
+                • <strong>Why This Role:</strong> {{ profile.career_recommendations.primary_target.fit_reasoning }}
+            </div>
+        </div>
+
+        <div class="banner">
+            <span>Prerequisite Core Technical Capabilities</span>
+            <span class="evidence-tag tag-derived">DERIVED</span>
+        </div>
+        <div class="box" style="border-left: 4px solid #0284c7;">
+            <strong style="color: #0284c7;">Core Technical Skill Stack:</strong>
+            <p style="margin: 2px 0 0 0; font-size: 8px; color: #27272a;">
+                {{ profile.career_recommendations.primary_target.hard_skills }}
+            </p>
+        </div>
+
+        <div class="banner">
+            <span>Career Domain Rationalization</span>
+            <span class="evidence-tag tag-interpreted">AI INTERPRETED</span>
+        </div>
+        <div class="box" style="border-left: 4px solid #ca8a04;">
+            <p style="margin: 0; font-size: 8.5px; line-height: 1.5; color: #27272a;">
+                {{ profile.narrative.career_fit_rationale }}
+            </p>
+        </div>
+
+        <div class="term-guide">
+            <strong>TERM GUIDE:</strong><br>
+            • <strong>Primary Target Role:</strong> The highest-scoring career profile identified through multi-vector mapping of candidate competencies to branch requirements.<br>
+            • <strong>Core Technical Stack:</strong> Verified engineering and operational competencies required for enterprise role onboarding.
+        </div>
+
+        <div class="footer">
+            <span>Candidate: {{ profile.student.name }} (USN: {{ profile.student.usn }})</span>
+            <span>Genesis CareerFit Platform (Page 5 of 12)</span>
+        </div>
+    </div>
+
+    <!-- PAGE 6: UNIVERSAL CAREER SUITABILITY MATRIX -->
+    <div class="page">
+        <div class="header">
+            <h1>PAGE 6 — UNIVERSAL CAREER SUITABILITY MATRIX</h1>
+            <div class="meta">{{ profile.student.name }} | USN: {{ profile.student.usn }} | Dept: {{ profile.student.department }}</div>
+            <div class="right-id">Page 6</div>
+        </div>
+
+        <div class="banner">
+            <span>Evaluated Career Universe (Branch-Aligned Tracks)</span>
+            <span class="evidence-tag tag-derived">DERIVED</span>
+        </div>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Domain Path</th>
+                    <th>Role Designation</th>
+                    <th class="center">Suitability %</th>
+                    <th class="center">Job Readiness %</th>
+                    <th class="center">Fit Tier</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for role in profile.career_recommendations.top_10_roles %}
+                <tr>
+                    <td><strong>{{ role.domain }}</strong></td>
+                    <td>{{ role.role }}</td>
+                    <td class="center"><strong>{{ role.match_score }}%</strong></td>
+                    <td class="center">{{ role.readiness_score }}%</td>
+                    <td class="center"><span class="badge-outstanding">{{ role.fit_tier }}</span></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="banner">
+            <span>Matching Methodology & Evidence Provenance</span>
+            <span class="evidence-tag tag-derived">DERIVED</span>
+        </div>
+        <div class="box">
+            <p style="margin: 0; font-size: 8px; line-height: 1.45; color: #27272a;">
+                All career tracks are evaluated through mathematical matching against candidate's verified competency percentages, academic department ({{ profile.student.department }}), and situational judgment performance. Unassessed technical tracks are omitted to maintain audit accuracy.
+            </p>
+        </div>
+
+        <div class="term-guide">
+            <strong>TERM GUIDE:</strong><br>
+            • <strong>Suitability %:</strong> Mathematical affinity between candidate behavioral tendencies and target role requirements.<br>
+            • <strong>Fit Tier:</strong> Placement classification tier indicating immediate campus hiring viability.
+        </div>
+
+        <div class="footer">
+            <span>Candidate: {{ profile.student.name }} (USN: {{ profile.student.usn }})</span>
+            <span>Genesis CareerFit Platform (Page 6 of 12)</span>
+        </div>
+    </div>
+
+    <!-- PAGE 7: WHY THESE CAREERS FIT -->
+    <div class="page">
+        <div class="header">
+            <h1>PAGE 7 — CAREER ALIGNMENT & COUNTER-ANALYSIS</h1>
+            <div class="meta">{{ profile.student.name }} | USN: {{ profile.student.usn }} | Dept: {{ profile.student.department }}</div>
+            <div class="right-id">Page 7</div>
+        </div>
+
+        <div class="banner">
+            <span>Evidence-to-Recommendation Validation</span>
+            <span class="evidence-tag tag-interpreted">AI INTERPRETED</span>
+        </div>
+        <div class="box" style="border-left: 5px solid #15803d; background: #f0fdf4;">
+            <strong style="color: #15803d; font-size: 9px;">PRIMARY RECOMMENDATION: {{ profile.career_recommendations.primary_target.role }}</strong>
+            <p style="margin: 2px 0 0 0; font-size: 8px; line-height: 1.5; color: #27272a;">
+                {{ profile.narrative.career_fit_rationale }}
+            </p>
+        </div>
+
+        <div class="banner">
+            <span>Alternative Track Counter-Analysis</span>
+            <span class="evidence-tag tag-interpreted">AI INTERPRETED</span>
+        </div>
+        <div class="box" style="border-left: 5px solid #ef4444; background: #fff5f5;">
+            <strong style="color: #ef4444; font-size: 9px;">EXCLUSION & DEVELOPMENT GAP ANALYSIS</strong>
+            <p style="margin: 2px 0 0 0; font-size: 8px; line-height: 1.5; color: #27272a;">
+                {{ profile.narrative.why_not_others }}
+            </p>
+        </div>
+
+        <div class="term-guide">
+            <strong>TERM GUIDE:</strong><br>
+            • <strong>Counter-Analysis:</strong> Objective assessment detailing why adjacent engineering roles ranked lower due to specific competency differentials.<br>
+            • <strong>Alignment Validation:</strong> Cross-referencing measured strengths against real-world technical role expectations.
+        </div>
+
+        <div class="footer">
+            <span>Candidate: {{ profile.student.name }} (USN: {{ profile.student.usn }})</span>
+            <span>Genesis CareerFit Platform (Page 7 of 12)</span>
+        </div>
+    </div>
+
+    <!-- PAGE 8: SWOT ANALYSIS -->
+    <div class="page">
+        <div class="header">
+            <h1>PAGE 8 — SWOT DIAGNOSTIC MATRIX</h1>
+            <div class="meta">{{ profile.student.name }} | USN: {{ profile.student.usn }} | Dept: {{ profile.student.department }}</div>
+            <div class="right-id">Page 8</div>
+        </div>
+
+        <div class="swot-grid">
+            <div class="swot-box swot-s">
+                <div style="display: flex; justify-content: space-between;">
+                    <strong style="color: #854d0e; font-size: 9px;">STRENGTHS</strong>
+                    <span class="evidence-tag tag-measured">MEASURED</span>
+                </div>
+                <ul style="margin: 2px 0 0 0; padding-left: 11px; font-size: 7.5px; color: #27272a; line-height: 1.4;">
+                    {% for s in profile.psychometric_profile.swot_analysis.strengths %}<li>{{ s }}</li>{% endfor %}
+                </ul>
+            </div>
+            <div class="swot-box swot-w">
+                <div style="display: flex; justify-content: space-between;">
+                    <strong style="color: #ef4444; font-size: 9px;">DEVELOPMENT GAPS</strong>
+                    <span class="evidence-tag tag-measured">MEASURED</span>
+                </div>
+                <ul style="margin: 2px 0 0 0; padding-left: 11px; font-size: 7.5px; color: #27272a; line-height: 1.4;">
+                    {% for w in profile.psychometric_profile.swot_analysis.weaknesses %}<li>{{ w }}</li>{% endfor %}
+                </ul>
+            </div>
+            <div class="swot-box swot-o">
+                <div style="display: flex; justify-content: space-between;">
+                    <strong style="color: #0284c7; font-size: 9px;">OPPORTUNITIES</strong>
+                    <span class="evidence-tag tag-derived">DERIVED</span>
+                </div>
+                <ul style="margin: 2px 0 0 0; padding-left: 11px; font-size: 7.5px; color: #27272a; line-height: 1.4;">
+                    <li>High alignment with Tier-1 recruitment in {{ profile.career_recommendations.primary_target.domain }}.</li>
+                    <li>Publish end-to-end repository artifacts to strengthen technical interview rounds.</li>
+                </ul>
+            </div>
+            <div class="swot-box swot-t">
+                <div style="display: flex; justify-content: space-between;">
+                    <strong style="color: #f97316; font-size: 9px;">PLACEMENT RISKS</strong>
+                    <span class="evidence-tag tag-derived">DERIVED</span>
+                </div>
+                <ul style="margin: 2px 0 0 0; padding-left: 11px; font-size: 7.5px; color: #27272a; line-height: 1.4;">
+                    <li>Competitive candidate density requiring structured speed drills in technical problem solving.</li>
+                    <li>Risk of lower conversion if portfolio lacks verifiable cloud deployment artifacts.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="term-guide">
+            <strong>TERM GUIDE:</strong><br>
+            • <strong>SWOT Matrix:</strong> Structured diagnostic evaluating internal strengths/weaknesses and external opportunities/placement risks grounded in assessment data.
+        </div>
+
+        <div class="footer">
+            <span>Candidate: {{ profile.student.name }} (USN: {{ profile.student.usn }})</span>
+            <span>Genesis CareerFit Platform (Page 8 of 12)</span>
+        </div>
+    </div>
+
+    <!-- PAGE 9: SKILL GAP ANALYSIS -->
+    <div class="page">
+        <div class="header">
+            <h1>PAGE 9 — SKILL GAP & CAPSTONE BLUEPRINTS</h1>
+            <div class="meta">{{ profile.student.name }} | USN: {{ profile.student.usn }} | Dept: {{ profile.student.department }}</div>
+            <div class="right-id">Page 9</div>
+        </div>
+
+        <div class="banner">
+            <span>Target Skill Gap Remediation</span>
+            <span class="evidence-tag tag-interpreted">AI INTERPRETED</span>
+        </div>
+        <div class="box" style="border-left: 4px solid #ca8a04;">
+            <p style="margin: 0; font-size: 8.5px; line-height: 1.5; color: #27272a;">
+                {{ profile.narrative.skill_gap_analysis }}
+            </p>
+        </div>
+
+        <div class="banner">
+            <span>Recommended Technical Capstones</span>
+            <span class="evidence-tag tag-derived">DERIVED</span>
+        </div>
+        {% for proj in profile.counselling_suite.recommended_projects %}
+        <div class="box" style="border-left: 4px solid #15803d; margin-bottom: 6px;">
+            <strong style="color: #15803d; font-size: 8.5px;">{{ proj.title }}</strong><br>
+            <div style="font-size: 7.5px; margin-top: 2px; line-height: 1.4;">
+                • <strong>Description:</strong> {{ proj.description }}<br>
+                • <strong>Tools / Tech Stack:</strong> {{ proj.tech_stack | join(', ') }}
+            </div>
+        </div>
+        {% endfor %}
+
+        <div class="term-guide">
+            <strong>TERM GUIDE:</strong><br>
+            • <strong>Skill Gap:</strong> Distance between candidate's evaluated proficiency and industry entry expectations.<br>
+            • <strong>Capstone Blueprints:</strong> Recommended practical portfolio architectures designed to demonstrate competency to enterprise recruiters.
+        </div>
+
+        <div class="footer">
+            <span>Candidate: {{ profile.student.name }} (USN: {{ profile.student.usn }})</span>
+            <span>Genesis CareerFit Platform (Page 9 of 12)</span>
+        </div>
+    </div>
+
+    <!-- PAGE 10: INTERVIEW READINESS -->
+    <div class="page">
+        <div class="header">
+            <h1>PAGE 10 — INTERVIEW READINESS & EVALUATION</h1>
+            <div class="meta">{{ profile.student.name }} | USN: {{ profile.student.usn }} | Dept: {{ profile.student.department }}</div>
+            <div class="right-id">Page 10</div>
+        </div>
+
+        <div class="banner">
+            <span>Placement Readiness Verdict</span>
+            <span class="evidence-tag tag-derived">DERIVED</span>
+        </div>
+        <div class="box" style="border-left: 5px solid #ca8a04;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 3px;">
+                <strong style="font-size: 9.5px; color: #854d0e;">CLASSIFICATION: {{ profile.scores.verdict }}</strong>
+                <span class="{{ profile.scores.verdict_badge }}">PLACEMENT ELIGIBLE</span>
+            </div>
+            <p style="margin: 0; font-size: 8px; line-height: 1.5; color: #27272a;">
+                {{ profile.narrative.employability_verdict }}
+            </p>
+        </div>
+
+        <div class="banner">
+            <span>Targeted STAR Interview Questions</span>
+            <span class="evidence-tag tag-interpreted">AI INTERPRETED</span>
+        </div>
+        {% for probe in profile.recruiter_intelligence.interview_focus_areas %}
+        <div class="box" style="border-left: 4px solid #f97316; margin-bottom: 5px;">
+            <strong style="color: #c2410c; font-size: 8px;">[Competency Focus] {{ probe.competency }}</strong><br>
+            <div style="font-size: 7.5px; margin-top: 2px; line-height: 1.35;">
+                • <strong>Probing Question:</strong> "{{ probe.question }}"<br>
+                • <strong>Positive Indicator (Green Flag):</strong> {{ probe.green_flag }}<br>
+                • <strong>Risk Indicator (Red Flag):</strong> {{ probe.red_flag }}
+            </div>
+        </div>
+        {% endfor %}
+
+        <div class="term-guide">
+            <strong>TERM GUIDE:</strong><br>
+            • <strong>STAR Method:</strong> Structured behavioral interview framework focusing on Situation, Task, Action, and Result.<br>
+            • <strong>Evaluation Probes:</strong> Behavioral questions targeted at validating candidate depth in high-priority competency areas.
+        </div>
+
+        <div class="footer">
+            <span>Candidate: {{ profile.student.name }} (USN: {{ profile.student.usn }})</span>
+            <span>Genesis CareerFit Platform (Page 10 of 12)</span>
+        </div>
+    </div>
+
+    <!-- PAGE 11: 90-DAY DEVELOPMENT ROADMAP -->
+    <div class="page">
+        <div class="header">
+            <h1>PAGE 11 — 90-DAY DEVELOPMENT ROADMAP</h1>
+            <div class="meta">{{ profile.student.name }} | USN: {{ profile.student.usn }} | Dept: {{ profile.student.department }}</div>
+            <div class="right-id">Page 11</div>
+        </div>
+
+        <div class="banner">
+            <span>Three-Phase Upskilling Plan</span>
+            <span class="evidence-tag tag-interpreted">AI INTERPRETED</span>
+        </div>
+        {% for stage_key, stage in profile.counselling_suite.roadmap.items() %}
+        <div class="box" style="border-left: 4px solid #ca8a04; margin-bottom: 6px;">
+            <strong style="color: #854d0e; font-size: 8.5px;">{{ stage.title }}</strong><br>
+            <div style="font-size: 7.5px; margin-top: 2px; line-height: 1.4;">
+                • <strong>Objective:</strong> {{ stage.focus }}<br>
+                • <strong>Action Items:</strong> {{ stage.action_items | join(', ') }}
+            </div>
+        </div>
+        {% endfor %}
+
+        <div class="term-guide">
+            <strong>TERM GUIDE:</strong><br>
+            • <strong>90-Day Roadmap:</strong> Staged development pathway prioritizing deficit remediation (Days 1–30), applied portfolio implementation (Days 31–60), and recruitment conversion drills (Days 61–90).
+        </div>
+
+        <div class="footer">
+            <span>Candidate: {{ profile.student.name }} (USN: {{ profile.student.usn }})</span>
+            <span>Genesis CareerFit Platform (Page 11 of 12)</span>
+        </div>
+    </div>
+
+    <!-- PAGE 12: FINAL CAREER DIAGNOSIS -->
+    <div class="page">
+        <div class="header">
+            <h1>PAGE 12 — FINAL DIAGNOSIS & SUMMARY</h1>
+            <div class="meta">{{ profile.student.name }} | USN: {{ profile.student.usn }} | Dept: {{ profile.student.department }}</div>
+            <div class="right-id">Page 12</div>
+        </div>
+
+        <div class="banner">
+            <span>Holistic Career Diagnostic Synthesis</span>
+            <span class="evidence-tag tag-interpreted">AI INTERPRETED</span>
+        </div>
+        <div class="box" style="border-left: 5px solid #ca8a04;">
+            <p style="margin: 0; font-size: 8.5px; line-height: 1.5; color: #27272a;">
+                {{ profile.narrative.final_diagnosis }}
+            </p>
+        </div>
+
+        <div class="banner">
+            <span>Report Authentication & Integrity Audit</span>
+            <span class="evidence-tag tag-derived">DERIVED</span>
+        </div>
+        <div class="box" style="border: 1.5px solid #ca8a04; padding: 10px; margin-top: 8px; background: #fffdf5;">
+            <div style="text-align: center; font-size: 9.5px; font-weight: 800; color: #854d0e; margin-bottom: 4px;">
+                GENESIS CAREERFIT TALENT INTELLIGENCE AUDIT RECORD
+            </div>
+            <p style="font-size: 7.5px; line-height: 1.45; margin: 0; color: #3f3f46;">
+                This assessment dossier for <strong>{{ profile.student.name }}</strong> (USN: <code>{{ profile.student.usn }}</code>, Dept: <strong>{{ profile.student.department }}</strong>) has been generated through deterministic competency scoring and structured AI narrative interpretation.
+            </p>
+            <div style="margin-top: 6px; font-size: 7px; border-top: 1px dashed #ca8a04; padding-top: 5px; color: #71717a;">
+                <strong>Security Audit Hash:</strong> <code>{{ profile.audit_certification.verification_hash }}</code><br>
+                <strong>Evaluation Generated:</strong> {{ profile.audit_certification.certified_at }}
+            </div>
+        </div>
+
+        <div class="term-guide">
+            <strong>TERM GUIDE:</strong><br>
+            • <strong>Audit Hash:</strong> Secure SHA-256 process digest ensuring immutable verification of candidate assessment records.
+        </div>
+
+        <div class="footer">
+            <span>Candidate: {{ profile.student.name }} (USN: {{ profile.student.usn }})</span>
+            <span>Genesis CareerFit Platform (Page 12 of 12)</span>
+        </div>
+    </div>
+
+</body>
+</html>

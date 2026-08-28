@@ -1,0 +1,34 @@
+<div class="page">
+  <div class="header-bar">
+    <div>
+      <div class="section-title">19-Competency Behavioral Profile</div>
+      <div style="font-size: 8pt; color: #6B7280;">Deterministic Situational Judgment Test (SJT) competency heatmap</div>
+    </div>
+    <div style="font-size: 8pt; font-weight: bold; color: #0B0B0B;">SECTION 03</div>
+  </div>
+
+  <table class="table-custom">
+    <thead>
+      <tr>
+        <th>Behavioral Competency</th>
+        <th>Score (%)</th>
+        <th>Performance Tier</th>
+        <th>Strategic Placement Relevance</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for comp, cdata in validated_metrics.psychometric_summary.key_competencies.items() %}
+      <tr>
+        <td><strong>{{ comp }}</strong></td>
+        <td><strong>{{ cdata.pct }}%</strong></td>
+        <td>{{ cdata.rating }}</td>
+        <td>Core Professional Baseline</td>
+      </tr>
+      {% else %}
+      <tr>
+        <td colspan="4" style="text-align: center; color: #6B7280;">Psychometric responses Not Evaluated for this test run.</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

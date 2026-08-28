@@ -1,0 +1,32 @@
+{
+  "EMPLOYABILITY_INDEX": {
+    "term": "Employability Index",
+    "technical_definition": "A composite weighted percentage metric derived from measured workplace competency scores.",
+    "simple_explanation": "It provides a clear overall picture of how naturally your assessed workplace behaviors align with expectations in professional entry-level roles."
+  },
+  "PERCENTILE": {
+    "term": "Percentile Score",
+    "technical_definition": "A relative statistical ranking measure indicating the proportion of test takers who scored at or below a specific level.",
+    "simple_explanation": "It tells you how your performance compares relative to other candidate scores in the evaluated benchmark population."
+  },
+  "COMPETENCY": {
+    "term": "Workplace Competency",
+    "technical_definition": "A standardized, observable cluster of skills, knowledge, and behavioral habits required for job performance.",
+    "simple_explanation": "A specific workplace behavior or practical skill—such as problem-solving or team collaboration—that helps you succeed at work."
+  },
+  "ASSESSMENT_COVERAGE": {
+    "term": "Assessment Coverage",
+    "technical_definition": "The ratio of evaluated skill domains relative to the full domain taxonomy.",
+    "simple_explanation": "It shows which technical or behavioral areas were actually measured in this assessment run, ensuring unassessed areas are not mistaken for poor performance."
+  },
+  "JOB_HEALTH_CARD": {
+    "term": "Job Health Card",
+    "technical_definition": "A diagnostic matrix comparing candidate evidence against specific role entry requirements.",
+    "simple_explanation": "A quick readiness check that highlights which candidate strengths support a job role and what additional skills need practice."
+  },
+  "SITUATIONAL_JUDGMENT": {
+    "term": "Situational Judgment",
+    "technical_definition": "A measurement methodology evaluating candidate decision-making in realistic workplace scenarios.",
+    "simple_explanation": "Questions that present everyday workplace challenges to assess how you prioritize, solve conflicts, and interact with colleagues."
+  }
+}

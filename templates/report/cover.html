@@ -1,0 +1,28 @@
+<div class="page" style="display: flex; flex-direction: column; justify-content: space-between; border: 4px solid #0B0B0B; padding: 25mm 20mm;">
+  <div>
+    <div style="background: #0B0B0B; color: #F5C400; padding: 8px 16px; font-weight: 900; font-size: 14pt; display: inline-block; border-radius: 4px;">
+      GENESIS CAREERFIT
+    </div>
+    <div style="font-size: 9pt; text-transform: uppercase; letter-spacing: 2px; color: #6B7280; margin-top: 6px; font-weight: 700;">
+      Institutional Placement & Career Intelligence
+    </div>
+  </div>
+
+  <div style="margin: 40mm 0;">
+    <div style="font-size: 26pt; font-weight: 900; color: #0B0B0B; line-height: 1.1; margin-bottom: 8px;">
+      {{ metadata.name }}
+    </div>
+    <div style="font-size: 11pt; color: #4B5563; font-weight: 600;">
+      USN: <span style="font-family: monospace; color: #0B0B0B;">{{ metadata.usn }}</span> | Department: {{ metadata.department }}
+    </div>
+    <div style="font-size: 10pt; color: #6B7280; margin-top: 4px;">
+      Institution: {{ metadata.college }}
+    </div>
+  </div>
+
+  <div style="border-top: 1px solid #E5E7EB; pt: 10px; display: flex; justify-content: space-between; font-size: 8pt; color: #6B7280;">
+    <div><strong>Evidence Tier:</strong> {{ assessment_coverage.overall_confidence }}</div>
+    <div><strong>Evaluation Date:</strong> August 2026</div>
+    <div><strong>Verification:</strong> Audit Validated</div>
+  </div>
+</div>

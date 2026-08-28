@@ -1,0 +1,12 @@
+{
+  "role_id": "DATA_ANALYST",
+  "role_name": "Data Analyst / BI Analyst",
+  "description": "Involves processing, interpreting, and visualizing data to drive company decisions.",
+  "required_competencies": {
+    "Analytical Thinking & Problem Solving": 75.0,
+    "Decision Making": 65.0,
+    "Quality Orientation": 60.0
+  },
+  "preferred_technical_domains": ["SQL", "Python", "Data Analytics"],
+  "min_overall_employability": 65.0
+}

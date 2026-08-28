@@ -1,0 +1,13 @@
+{
+  "role_id": "BUSINESS_ANALYST",
+  "role_name": "Business Analyst / Consultant",
+  "description": "Involves analyzing business needs, managing stakeholders, and formulating strategic solutions.",
+  "required_competencies": {
+    "Communication": 75.0,
+    "Customer Orientation": 70.0,
+    "Decision Making": 65.0,
+    "Leadership & Influence": 60.0
+  },
+  "preferred_technical_domains": ["Aptitude", "Verbal"],
+  "min_overall_employability": 60.0
+}

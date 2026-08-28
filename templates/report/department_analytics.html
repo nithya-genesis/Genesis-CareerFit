@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Genesis CareerFit — Department Placement Intelligence Report</title>
+    <style>
+        @page { size: A4; margin: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; color: #0A0A0A; line-height: 1.4; margin: 0; background: #FFFFFF; }
+        .page { page-break-after: always; height: 297mm; width: 210mm; padding: 12mm 14mm; box-sizing: border-box; position: relative; border: 1px solid #E4E4E7; }
+        .header { background: #0A0A0A; color: #FFFFFF; padding: 8px 12px; border-radius: 6px; margin-bottom: 8px; border-left: 4px solid #FFD000; position: relative; }
+        .header h1 { margin: 0; font-size: 11.5px; font-weight: 900; text-transform: uppercase; color: #FFFFFF; }
+        .header .right-id { position: absolute; right: 12px; top: 8px; font-size: 8px; color: #FFD000; font-family: monospace; font-weight: 700; }
+        .banner { background: #F7F7F5; color: #0A0A0A; padding: 4px 8px; font-size: 8px; font-weight: 700; margin: 6px 0; border-left: 3px solid #FFD000; border-radius: 4px; border: 1px solid #E4E4E7; }
+        .grid-4 { display: flex; justify-content: space-between; gap: 6px; margin-bottom: 6px; }
+        .stat-card-4 { background: #F7F7F5; border: 1px solid #E4E4E7; border-radius: 6px; padding: 6px 8px; text-align: center; width: 23.5%; box-sizing: border-box; }
+        .metric-val { font-size: 13px; font-weight: 900; color: #0A0A0A; }
+        .metric-lbl { font-size: 7px; color: #71717A; font-weight: 700; text-transform: uppercase; }
+        table.data-table { width: 100%; border-collapse: collapse; margin: 4px 0; font-size: 7.5px; }
+        table.data-table th, table.data-table td { border: 1px solid #E4E4E7; padding: 3.5px 5px; text-align: left; }
+        table.data-table th { background-color: #0A0A0A; color: #FFFFFF; font-size: 7px; text-align: center; text-transform: uppercase; }
+        .center { text-align: center; }
+        .badge-outstanding { color: #047857; background: #ECFDF5; border: 1px solid #A7F3D0; padding: 1.5px 5px; border-radius: 3px; font-weight: 700; font-size: 7.5px; display: inline-block; }
+        .footer { position: absolute; bottom: 5mm; left: 14mm; right: 14mm; display: flex; justify-content: space-between; font-size: 6.8px; color: #71717A; border-top: 1px solid #E4E4E7; padding-top: 2.5mm; font-family: monospace; }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <h1>Department Placement Intelligence Report</h1>
+        <div style="font-size: 8px; color: #A1A1AA;">Computer Science & Engineering &nbsp;|&nbsp; Cohort 2026 Diagnostic</div>
+        <div class="right-id">DEPT-CSE-2026</div>
+    </div>
+    <div class="grid-4">
+        <div class="stat-card-4"><div class="metric-lbl">Assessed Cohort</div><div class="metric-val">10 Candidates</div></div>
+        <div class="stat-card-4"><div class="metric-lbl">Avg CareerFit Index</div><div class="metric-val">712.4 / 800</div></div>
+        <div class="stat-card-4"><div class="metric-lbl">Placement Ready %</div><div class="metric-val" style="color: #047857;">80.0%</div></div>
+        <div class="stat-card-4"><div class="metric-lbl">Evidence Coverage</div><div class="metric-val">100% Core</div></div>
+    </div>
+    <div class="banner"><span>Department Placement Readiness Distribution</span></div>
+    <div style="background: #F7F7F5; border: 1px solid #E4E4E7; border-radius: 6px; padding: 8px; font-size: 7.5px; margin-bottom: 6px;">
+        • <strong>Quadrant 1 (Placement Ready):</strong> 8 Candidates (80.0%)<br />
+        • <strong>Quadrant 2 (Provisional Ready):</strong> 2 Candidates (20.0%)<br />
+        • <strong>Quadrant 3 (Guidance Required):</strong> 0 Candidates (0.0%)
+    </div>
+    <div class="banner"><span>Top Career Alignment Supply</span></div>
+    <table class="data-table">
+        <thead>
+            <tr><th style="width: 40%; text-align: left;">Career Role Track</th><th style="width: 30%;">Aligned Students</th><th style="width: 30%;">Avg Suitability %</th></tr>
+        </thead>
+        <tbody>
+            <tr><td><strong>Software Development Engineer</strong></td><td class="center">6 Candidates</td><td class="center font-mono">87.5%</td></tr>
+            <tr><td><strong>Backend Systems Engineer</strong></td><td class="center">3 Candidates</td><td class="center font-mono">84.2%</td></tr>
+            <tr><td><strong>Data & Systems Analyst</strong></td><td class="center">1 Candidate</td><td class="center font-mono">82.0%</td></tr>
+        </tbody>
+    </table>
+    <div class="footer"><span>Genesis CareerFit • Department Intelligence</span><span>Page 1 of 8</span></div>
+</div>
+</body>
+</html>

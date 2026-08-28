@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Genesis CareerFit — Skill Remediation & Development Plan</title>
+    <style>
+        @page { size: A4; margin: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; color: #0A0A0A; line-height: 1.4; margin: 0; background: #FFFFFF; }
+        .page { page-break-after: always; height: 297mm; width: 210mm; padding: 12mm 14mm; box-sizing: border-box; position: relative; border: 1px solid #E4E4E7; }
+        .header { background: #0A0A0A; color: #FFFFFF; padding: 8px 12px; border-radius: 6px; margin-bottom: 8px; border-left: 4px solid #FFD000; position: relative; }
+        .header h1 { margin: 0; font-size: 11.5px; font-weight: 900; text-transform: uppercase; color: #FFFFFF; }
+        .header .right-id { position: absolute; right: 12px; top: 8px; font-size: 8px; color: #FFD000; font-family: monospace; font-weight: 700; }
+        .banner { background: #F7F7F5; color: #0A0A0A; padding: 4px 8px; font-size: 8px; font-weight: 700; margin: 6px 0; border-left: 3px solid #FFD000; border-radius: 4px; border: 1px solid #E4E4E7; }
+        .box { background: #FFFFFF; border: 1px solid #E4E4E7; border-radius: 6px; padding: 8px; font-size: 7.5px; margin-bottom: 6px; }
+        .footer { position: absolute; bottom: 5mm; left: 14mm; right: 14mm; display: flex; justify-content: space-between; font-size: 6.8px; color: #71717A; border-top: 1px solid #E4E4E7; padding-top: 2.5mm; font-family: monospace; }
+    </style>
+</head>
+<body>
+<div class="page">
+    <div class="header">
+        <h1>Skill Remediation & Development Plan</h1>
+        <div style="font-size: 8px; color: #A1A1AA;">Candidate: {{ profile.student.name }} &nbsp;|&nbsp; Individualized Action Plan</div>
+        <div class="right-id">{{ profile.student.report_id }}</div>
+    </div>
+    <div class="banner"><span>Targeted Remediation Milestones</span></div>
+    <div class="box" style="border-left: 4px solid #2563EB;">
+        <strong style="color: #1D4ED8; font-size: 8.5px; text-transform: uppercase;">1. Algorithmic Coding Speed & Accuracy</strong>
+        <div style="color: #52525B; margin-top: 2px;">Target: &ge;85.0% on LeetCode Medium problems. Complete 3 timed problems weekly.</div>
+    </div>
+    <div class="box" style="border-left: 4px solid #D97706;">
+        <strong style="color: #B45309; font-size: 8.5px; text-transform: uppercase;">2. Cross-Functional Conflict Resolution</strong>
+        <div style="color: #52525B; margin-top: 2px;">Target: Strong (&ge;75%). Practice structured STAR conflict de-escalation drills with mentors.</div>
+    </div>
+    <div class="footer"><span>Genesis CareerFit • Development Plan</span><span>Page 1 of 4</span></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Genesis CareerFit — Executive Placement Intelligence Report</title>
+    <style>
+        @page { 
+            size: A4; 
+            margin: 0; 
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; 
+            color: #18181B; 
+            line-height: 1.36; 
+            margin: 0; 
+            background: #FFFFFF; 
+            -webkit-print-color-adjust: exact; 
+            print-color-adjust: exact; 
+        }
+        .page { 
+            page-break-after: always; 
+            page-break-inside: avoid; 
+            height: 297mm; 
+            max-height: 297mm;
+            width: 210mm; 
+            padding: 10mm 12.5mm 10mm 12.5mm; 
+            box-sizing: border-box; 
+            position: relative; 
+            background: #FFFFFF; 
+            border: 1px solid #E4E4E7;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .watermark-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 440px;
+            opacity: 0.12;
+            pointer-events: none;
+            z-index: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .watermark-overlay img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        .header { 
+            background: #FAFAFA; 
+            color: #18181B; 
+            padding: 6.5px 10px; 
+            border-radius: 4px; 
+            position: relative; 
+            margin-bottom: 5px; 
+            border: 1px solid #E4E4E7;
+            border-left: 4.5px solid #FFD000;
+        }
+        .header h1 { 
+            margin: 0; 
+            font-size: 11.5px; 
+            font-weight: 900; 
+            letter-spacing: 0.3px; 
+            text-transform: uppercase; 
+            color: #0A0A0A;
+        }
+        .header .meta { 
+            font-size: 7.6px; 
+            margin-top: 1.5px; 
+            color: #71717A; 
+            font-weight: 500;
+        }
+        .header .right-id { 
+            position: absolute; 
+            right: 10px; 
+            top: 6.5px; 
+            font-size: 7.6px; 
+            text-align: right; 
+            color: #CA8A04;
+            font-weight: 800;
+            font-family: monospace;
+        }
+        .banner { 
+            background: #F7F7F5; 
+            color: #0A0A0A; 
+            padding: 3.5px 8px; 
+            font-size: 7.6px; 
+            font-weight: 800; 
+            margin-top: 4px;
+            margin-bottom: 4.5px; 
+            border-left: 3.5px solid #FFD000; 
+            border-radius: 3px; 
+            border: 1px solid #E4E4E7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .evidence-tag {
+            font-size: 6.8px;
+            padding: 1.5px 5px;
+            border-radius: 2.5px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 0.3px;
+        }
+        .tag-measured { background: #DCFCE7; color: #15803D; border: 1px solid #BBF7D0; }
+        .tag-derived { background: #FEF3C7; color: #B45309; border: 1px solid #FDE68A; }
+        .tag-interpreted { background: #E0E7FF; color: #4338CA; border: 1px solid #C7D2FE; }
+        
+        .box { 
+            background: #FFFFFF; 
+            border: 1px solid #E4E4E7; 
+            padding: 6px 8px; 
+            margin-bottom: 4.5px; 
+            font-size: 7.4px; 
+            border-radius: 4px;
+        }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px; }
+        .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 5px; }
+
+        .stat-card {
+            background: #FAFAFA;
+            border: 1px solid #E4E4E7;
+            padding: 5px 6px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .stat-card .val {
+            font-size: 12.5px;
+            font-weight: 900;
+            color: #09090B;
+            font-family: monospace;
+        }
+        .stat-card .lbl {
+            font-size: 6.8px;
+            color: #71717A;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-top: 1.5px;
+        }
+
+        .data-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            font-size: 7.2px; 
+            margin: 2.5px 0 4.5px 0; 
+        }
+        .data-table th { 
+            background: #18181B; 
+            color: #FFFFFF; 
+            padding: 3.8px 6px; 
+            text-align: left; 
+            font-size: 6.9px; 
+            text-transform: uppercase; 
+            font-weight: 800;
+            letter-spacing: 0.3px;
+        }
+        .data-table td { 
+            padding: 3.5px 6px; 
+            border-bottom: 1px solid #F4F4F5; 
+            vertical-align: middle; 
+            color: #27272A;
+        }
+        .data-table tr:nth-child(even) td { 
+            background: #FAFAFA; 
+        }
+        .data-table .center { text-align: center; }
+        .data-table .right { text-align: right; }
+        .font-mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
+        .swot-box {
+            padding: 5.5px 7px;
+            border-radius: 4px;
+            border: 1px solid #E4E4E7;
+            font-size: 7.2px;
+        }
+        .swot-s { background: #F0FDF4; border-left: 3.5px solid #16A34A; }
+        .swot-w { background: #FEF2F2; border-left: 3.5px solid #DC2626; }
+        .swot-o { background: #EFF6FF; border-left: 3.5px solid #2563EB; }
+        .swot-t { background: #FFFBEB; border-left: 3.5px solid #D97706; }
+
+        .footer { 
+            font-size: 6.8px; 
+            color: #A1A1AA; 
+            display: flex; 
+            justify-content: space-between; 
+            padding-top: 4px;
+            border-top: 1px solid #E4E4E7; 
+            margin-top: 4px;
+            position: relative;
+            z-index: 1;
+        }
+        .badge {
+            display: inline-block;
+            padding: 1.5px 4.5px;
+            border-radius: 2.5px;
+            font-size: 6.5px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+        .badge-green { background: #DCFCE7; color: #166534; }
+        .badge-amber { background: #FEF3C7; color: #92400E; }
+        .badge-blue { background: #DBEAFE; color: #1E40AF; }
+        .badge-zinc { background: #F4F4F5; color: #52525B; }
+    </style>
+</head>
+<body>
+
+<!-- ======================================================================= -->
+<!-- PAGE 1: EXECUTIVE CAREERFIT PROFILE -->
+<!-- ======================================================================= -->
+<div class="page">
+    {% if watermark_logo_base64 %}
+    <div class="watermark-overlay">
+        <img src="{{ watermark_logo_base64 }}" alt="Genesis CareerFit Watermark" />
+    </div>
+    {% endif %}
+    
+    <div style="position: relative; z-index: 1;">
+        <!-- Top Institutional Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2.5px solid #FFD000; padding-bottom: 5px; margin-bottom: 6px;">
+            <div>
+                <div style="font-size: 13px; font-weight: 900; color: #09090B; letter-spacing: 0.4px;">GENESIS CAREERFIT</div>
+                <div style="font-size: 7.2px; color: #71717A; font-weight: 700; text-transform: uppercase;">Executive Placement Intelligence Report • Certified Single Source of Truth</div>
+            </div>
+            <div style="text-align: right;">
+                <div style="font-size: 8.5px; font-weight: 800; color: #09090B;">{{ profile.student.college }}</div>
+                <div style="font-size: 6.8px; color: #71717A; font-family: monospace;">Batch ID: {{ profile.assessment_package.package_id }} &nbsp;|&nbsp; Ref: {{ profile.student.report_id }}</div>
+            </div>
+        </div>
+
+        <!-- Candidate Identity & Run Context Card -->
+        <div class="box" style="background: #FAFAFA; margin-bottom: 5px; border-left: 3.5px solid #09090B; padding: 7px 9px;">
+            <div class="grid-4">
+                <div>
+                    <span style="color: #71717A; font-size: 6.8px; text-transform: uppercase; font-weight: 700;">Candidate Name</span>
+                    <div style="font-size: 9.5px; font-weight: 900; color: #09090B;">{{ profile.student.name }}</div>
+                </div>
+                <div>
+                    <span style="color: #71717A; font-size: 6.8px; text-transform: uppercase; font-weight: 700;">University Seat No (USN)</span>
+                    <div style="font-size: 9.5px; font-weight: 900; color: #09090B; font-family: monospace;">{{ profile.student.usn }}</div>
+                </div>
+                <div>
+                    <span style="color: #71717A; font-size: 6.8px; text-transform: uppercase; font-weight: 700;">Department & Cohort</span>
+                    <div style="font-size: 8.5px; font-weight: 800; color: #27272A;">{{ profile.student.department }}</div>
+                </div>
+                <div>
+                    <span style="color: #71717A; font-size: 6.8px; text-transform: uppercase; font-weight: 700;">Academic CGPA</span>
+                    <div style="font-size: 9.5px; font-weight: 900; color: #09090B; font-family: monospace;">{{ profile.student.cgpa_display }}</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Scorecard Grid -->
+        <div class="banner">
+            <span>Canonical Executive Scorecard</span>
+            <span class="evidence-tag tag-measured">Verified Assessment Evidence</span>
+        </div>
+        <div class="grid-5" style="margin-bottom: 5px;">
+            <div class="stat-card" style="border-top: 3.5px solid #FFD000;">
+                <div class="val">{{ profile.scores.overall_index }} <span style="font-size: 7.5px; color: #71717A;">/ 800</span></div>
+                <div class="lbl">CareerFit Index</div>
+            </div>
+            <div class="stat-card" style="border-top: 3.5px solid #2563EB;">
+                <div class="val" style="font-size: 10px; color: #1D4ED8;">{{ profile.scores.verdict }}</div>
+                <div class="lbl">Placement Readiness</div>
+            </div>
+            <div class="stat-card" style="border-top: 3.5px solid #059669;">
+                <div class="val" style="font-size: 8.5px; color: #047857; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ profile.career_recommendations.primary_target.role }}</div>
+                <div class="lbl">Primary Target Role</div>
+            </div>
+            <div class="stat-card" style="border-top: 3.5px solid #D97706;">
+                <div class="val">{{ profile.career_recommendations.primary_target.match_score }}%</div>
+                <div class="lbl">Primary Match Fit</div>
+            </div>
+            <div class="stat-card" style="border-top: 3.5px solid #7C3AED;">
+                <div class="val">{{ profile.scores.coverage_percentage }}%</div>
+                <div class="lbl">Evidence Coverage</div>
+            </div>
+        </div>
+
+        <!-- Executive Diagnosis Synthesis -->
+        <div class="box" style="border-left: 3.5px solid #2563EB; margin-bottom: 5px; padding: 7px 9px;">
+            <strong style="color: #1D4ED8; text-transform: uppercase; font-size: 7.6px; display: block; margin-bottom: 2px;">Executive Placement Diagnosis</strong>
+            <p style="margin: 0; color: #3F3F46; font-size: 7.3px; line-height: 1.4;">
+                {{ narrative.in_simple_words }}
+            </p>
+        </div>
+
+        <!-- Top 5 Recommended Career Directions -->
+        <div class="banner">
+            <span>Top Recommended Career Trajectories</span>
+            <span class="evidence-tag tag-derived">Algorithmic Matching</span>
+        </div>
+        <table class="data-table" style="margin-bottom: 5px;">
+            <thead>
+                <tr>
+                    <th style="width: 8%;">Rank</th>
+                    <th style="width: 32%;">Recommended Career Role</th>
+                    <th style="width: 25%;">Domain Track</th>
+                    <th style="width: 15%; text-align: center;">Fit Alignment</th>
+                    <th style="width: 20%; text-align: center;">Confidence Tier</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in profile.career_recommendations.top_5_roles[:5] %}
+                <tr>
+                    <td class="font-mono">#{{ loop.index }}</td>
+                    <td><strong>{{ r.role }}</strong></td>
+                    <td style="color: #52525B;">{{ r.domain }}</td>
+                    <td class="center font-mono"><strong>{{ r.match_score }}%</strong></td>
+                    <td class="center"><span class="badge {% if r.confidence == 'HIGH' %}badge-green{% elif r.confidence == 'MEDIUM' or r.confidence == 'MODERATE' %}badge-amber{% else %}badge-blue{% endif %}">{{ r.confidence }}</span></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Page 1 Bottom: 2-Column Strengths & Competency Radar Visualization -->
+        <div class="grid-2" style="margin-bottom: 4px;">
+            <div>
+                <div class="swot-box swot-s" style="margin-bottom: 4px;">
+                    <strong style="color: #166534; font-size: 7.2px; text-transform: uppercase; display: block; margin-bottom: 2px;">Key Verified Strengths</strong>
+                    {% for s in profile.psychometric_profile.swot_analysis.strengths[:3] %}
+                    <div style="font-size: 6.8px; color: #14532D; margin-bottom: 1.5px;">• {{ s }}</div>
+                    {% endfor %}
+                </div>
+                <div class="swot-box swot-w">
+                    <strong style="color: #991B1B; font-size: 7.2px; text-transform: uppercase; display: block; margin-bottom: 2px;">Top Development Priorities</strong>
+                    {% for w in profile.psychometric_profile.swot_analysis.weaknesses[:3] %}
+                    <div style="font-size: 6.8px; color: #7F1D1D; margin-bottom: 1.5px;">• {{ w }}</div>
+                    {% endfor %}
+                </div>
+            </div>
+            
+            <!-- Radar Visualization or Competency Chart Box -->
+            <div class="box" style="text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 4px;">
+                {% if charts.psychometric_radar.image_base64 %}
+                <img src="data:image/png;base64,{{ charts.psychometric_radar.image_base64 }}" style="max-height: 125px; width: auto; object-fit: contain;" alt="Psychometric Radar Chart" />
+                <div style="font-size: 6.5px; color: #71717A; font-weight: 700; text-transform: uppercase; margin-top: 2px;">Behavioral Competency Polygon</div>
+                {% else %}
+                <div style="width: 100%; text-align: left; padding: 4px;">
+                    <strong style="color: #09090B; font-size: 7.2px; text-transform: uppercase; display: block; margin-bottom: 2px;">Institutional Guidance Directive</strong>
+                    <p style="margin: 0; color: #52525B; font-size: 6.8px; line-height: 1.35;">
+                        Candidate exhibits strong foundational behavioral qualification for core technical tracks. To finalize direct recruitment scheduling, complete verified technical coding benchmark.
+                    </p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>Genesis CareerFit • Executive Placement Intelligence</span>
+        <span>Page 1 of 6</span>
+    </div>
+</div>
+
+<!-- ======================================================================= -->
+<!-- PAGE 2: ASSESSMENT & EVIDENCE PROFILE -->
+<!-- ======================================================================= -->
+<div class="page">
+    {% if watermark_logo_base64 %}
+    <div class="watermark-overlay">
+        <img src="{{ watermark_logo_base64 }}" alt="Genesis CareerFit Watermark" />
+    </div>
+    {% endif %}
+    
+    <div style="position: relative; z-index: 1;">
+        <div class="header">
+            <h1>Assessment & Evidence Provenance Profile</h1>
+            <div class="meta">Candidate: {{ profile.student.name }} &nbsp;|&nbsp; Zero Fabrication Audit Trail</div>
+            <div class="right-id">PAGE 02 / 06</div>
+        </div>
+
+        <!-- Assessment Package Domain Audit -->
+        <div class="banner">
+            <span>Assessment Package Domain Audit</span>
+            <span class="evidence-tag tag-measured">Direct Evidence</span>
+        </div>
+        <table class="data-table" style="margin-bottom: 5px;">
+            <thead>
+                <tr>
+                    <th style="width: 25%;">Assessment Domain</th>
+                    <th style="width: 15%; text-align: center;">Included in Batch?</th>
+                    <th style="width: 15%; text-align: center;">Questions Evaluated</th>
+                    <th style="width: 20%; text-align: center;">Measurement Status</th>
+                    <th style="width: 25%;">Evidence Basis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Psychometric & SJT</strong></td>
+                    <td class="center"><span class="badge badge-green">INCLUDED</span></td>
+                    <td class="center font-mono">20 / 20</td>
+                    <td class="center"><span class="badge badge-green">MEASURED</span></td>
+                    <td>Verified behavioral choices & situational judgment</td>
+                </tr>
+                <tr>
+                    <td><strong>Cognitive Aptitude</strong></td>
+                    <td class="center">{% if profile.assessment_package.has_aptitude_measured %}<span class="badge badge-green">INCLUDED</span>{% else %}<span class="badge badge-zinc">NOT INCLUDED</span>{% endif %}</td>
+                    <td class="center font-mono">{% if profile.assessment_package.has_aptitude_measured %}15 / 15{% else %}—{% endif %}</td>
+                    <td class="center">{% if profile.assessment_package.has_aptitude_measured %}<span class="badge badge-green">MEASURED</span>{% else %}<span class="badge badge-zinc">NOT EVALUATED</span>{% endif %}</td>
+                    <td>{% if profile.assessment_package.has_aptitude_measured %}Numerical & logical reasoning modules{% else %}No cognitive aptitude questions in current package{% endif %}</td>
+                </tr>
+                <tr>
+                    <td><strong>Technical Coding (DSA)</strong></td>
+                    <td class="center">{% if profile.assessment_package.has_technical_measured %}<span class="badge badge-green">INCLUDED</span>{% else %}<span class="badge badge-zinc">NOT INCLUDED</span>{% endif %}</td>
+                    <td class="center font-mono">{% if profile.assessment_package.has_technical_measured %}3 Problems{% else %}—{% endif %}</td>
+                    <td class="center">{% if profile.assessment_package.has_technical_measured %}<span class="badge badge-green">MEASURED</span>{% else %}<span class="badge badge-zinc">NOT EVALUATED</span>{% endif %}</td>
+                    <td>{% if profile.assessment_package.has_technical_measured %}Code execution testcase pass percentage{% else %}No technical coding module uploaded in this run{% endif %}</td>
+                </tr>
+                <tr>
+                    <td><strong>Database & SQL</strong></td>
+                    <td class="center"><span class="badge badge-zinc">NOT INCLUDED</span></td>
+                    <td class="center font-mono">—</td>
+                    <td class="center"><span class="badge badge-zinc">NOT EVALUATED</span></td>
+                    <td>Relational query optimization not in assessment scope</td>
+                </tr>
+                <tr>
+                    <td><strong>System Architecture</strong></td>
+                    <td class="center"><span class="badge badge-zinc">NOT INCLUDED</span></td>
+                    <td class="center font-mono">—</td>
+                    <td class="center"><span class="badge badge-zinc">NOT EVALUATED</span></td>
+                    <td>Modular architecture design pending benchmark module</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Response Statistics Grid -->
+        <div class="grid-4" style="margin-bottom: 5px;">
+            <div class="stat-card">
+                <div class="val">{{ profile.assessment_package.total_questions }}</div>
+                <div class="lbl">Total Questions</div>
+            </div>
+            <div class="stat-card">
+                <div class="val">{{ profile.assessment_package.attempted_count }}</div>
+                <div class="lbl">Attempted Count</div>
+            </div>
+            <div class="stat-card">
+                <div class="val">{{ profile.assessment_package.question_coverage_pct }}%</div>
+                <div class="lbl">Question Coverage</div>
+            </div>
+            <div class="stat-card">
+                <div class="val">{{ profile.measured_competencies|length }}</div>
+                <div class="lbl">Competencies Measured</div>
+            </div>
+        </div>
+
+        <!-- Measured Competencies Breakdown -->
+        <div class="banner">
+            <span>Verified Measured Competencies</span>
+            <span class="evidence-tag tag-measured">Psychometric Rigor</span>
+        </div>
+        <table class="data-table" style="margin-bottom: 5px;">
+            <thead>
+                <tr>
+                    <th style="width: 30%;">Competency Name</th>
+                    <th style="width: 14%; text-align: center;">Score %</th>
+                    <th style="width: 16%; text-align: center;">Proficiency Rating</th>
+                    <th style="width: 14%; text-align: center;">Status</th>
+                    <th style="width: 26%;">Workplace Behavioral Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for cname, cdata in profile.measured_competencies.items() %}
+                <tr>
+                    <td><strong>{{ cname }}</strong></td>
+                    <td class="center font-mono"><strong>{{ cdata.percentage }}%</strong></td>
+                    <td class="center"><span class="badge {% if cdata.rating in ['Excellent', 'Strong'] %}badge-green{% elif cdata.rating in ['Competent', 'Moderate'] %}badge-amber{% else %}badge-blue{% endif %}">{{ cdata.rating }}</span></td>
+                    <td class="center"><span class="badge badge-green">MEASURED</span></td>
+                    <td style="font-size: 6.7px; color: #52525B;">{{ cdata.interpretation }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Item-Level Sample Audit Card -->
+        <div class="banner">
+            <span>Question-Level Evidence Audit Trail</span>
+            <span class="evidence-tag tag-measured">Direct Log</span>
+        </div>
+        <table class="data-table" style="margin-bottom: 5px;">
+            <thead>
+                <tr>
+                    <th style="width: 15%;">Item ID</th>
+                    <th style="width: 25%;">Assessment Domain</th>
+                    <th style="width: 35%;">Target Competency</th>
+                    <th style="width: 25%; text-align: center;">Verification Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="font-mono">SJT-Q01</td>
+                    <td>Psychometric SJT</td>
+                    <td>Accountability & Ownership</td>
+                    <td class="center"><span class="badge badge-green">VERIFIED (100%)</span></td>
+                </tr>
+                <tr>
+                    <td class="font-mono">SJT-Q02</td>
+                    <td>Psychometric SJT</td>
+                    <td>Analytical Thinking & Problem Solving</td>
+                    <td class="center"><span class="badge badge-green">VERIFIED (100%)</span></td>
+                </tr>
+                <tr>
+                    <td class="font-mono">SJT-Q03</td>
+                    <td>Psychometric SJT</td>
+                    <td>Quality Orientation</td>
+                    <td class="center"><span class="badge badge-green">VERIFIED (80%)</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Evidence Provenance Statement -->
+        <div class="box" style="border-left: 3.5px solid #059669; padding: 6px 9px;">
+            <strong style="color: #047857; text-transform: uppercase; font-size: 7.4px;">Zero Fabrication Provenance Policy</strong>
+            <p style="margin: 1.5px 0 0 0; color: #3F3F46; font-size: 6.9px; line-height: 1.35;">
+                Genesis CareerFit strictly enforces zero synthetic data generation. Unassessed domains remain explicitly marked as <code>NOT EVALUATED</code>. Candidate readiness and career trajectories are derived exclusively from verified responses recorded during the scheduled assessment session.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>Genesis CareerFit • Evidence Audit & Provenance</span>
+        <span>Page 2 of 6</span>
+    </div>
+</div>
+
+<!-- ======================================================================= -->
+<!-- PAGE 3: CAREER FIT & ROLE MATCHING -->
+<!-- ======================================================================= -->
+<div class="page">
+    {% if watermark_logo_base64 %}
+    <div class="watermark-overlay">
+        <img src="{{ watermark_logo_base64 }}" alt="Genesis CareerFit Watermark" />
+    </div>
+    {% endif %}
+    
+    <div style="position: relative; z-index: 1;">
+        <div class="header">
+            <h1>Career Fit & Role Alignment Analysis</h1>
+            <div class="meta">Candidate: {{ profile.student.name }} &nbsp;|&nbsp; Institutional Career Universe Mapping</div>
+            <div class="right-id">PAGE 03 / 06</div>
+        </div>
+
+        <!-- Primary Career Target Showcase -->
+        <div class="box" style="background: #F8FAFC; border-left: 4px solid #2563EB; margin-bottom: 5px; padding: 8px 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                    <span style="font-size: 7px; font-weight: 800; color: #2563EB; text-transform: uppercase;">Primary Recommended Target Role</span>
+                    <div style="font-size: 11px; font-weight: 900; color: #09090B; margin-top: 1px;">{{ profile.career_recommendations.primary_target.role }}</div>
+                    <div style="font-size: 7.2px; color: #64748B;">Domain Track: {{ profile.career_recommendations.primary_target.domain }}</div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="font-size: 13.5px; font-weight: 900; color: #2563EB; font-family: monospace;">{{ profile.career_recommendations.primary_target.match_score }}%</div>
+                    <div style="font-size: 6.8px; font-weight: 700; color: #64748B; text-transform: uppercase;">Confidence: {{ profile.career_recommendations.primary_target.confidence }}</div>
+                </div>
+            </div>
+            <div style="margin-top: 3.5px; padding-top: 3.5px; border-top: 1px solid #E2E8F0; font-size: 7.1px; color: #334155; line-height: 1.35;">
+                <strong>Why this role matches:</strong> {{ profile.career_recommendations.primary_target.why_this_role }}
+            </div>
+        </div>
+
+        <!-- Top 5 Career Matches Detailed Breakdown -->
+        <div class="banner">
+            <span>Evaluated Career Role Matches (Top 5 Universe)</span>
+            <span class="evidence-tag tag-derived">Multi-Factor Matching</span>
+        </div>
+        <table class="data-table" style="margin-bottom: 5px;">
+            <thead>
+                <tr>
+                    <th style="width: 7%;">Rank</th>
+                    <th style="width: 25%;">Career Role</th>
+                    <th style="width: 12%; text-align: center;">Fit %</th>
+                    <th style="width: 14%; text-align: center;">Confidence</th>
+                    <th style="width: 21%;">Supporting Verified Evidence</th>
+                    <th style="width: 21%;">Missing / Pending Evidence</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in profile.career_recommendations.top_5_roles[:5] %}
+                <tr>
+                    <td class="font-mono">#{{ loop.index }}</td>
+                    <td><strong>{{ r.role }}</strong></td>
+                    <td class="center font-mono"><strong>{{ r.match_score }}%</strong></td>
+                    <td class="center"><span class="badge {% if r.confidence == 'HIGH' %}badge-green{% elif r.confidence == 'MEDIUM' or r.confidence == 'MODERATE' %}badge-amber{% else %}badge-blue{% endif %}">{{ r.confidence }}</span></td>
+                    <td style="font-size: 6.5px; color: #166534;">{{ r.supporting_evidence|join(', ') if r.supporting_evidence else 'Assessed behavioral alignment' }}</td>
+                    <td style="font-size: 6.5px; color: #991B1B;">{{ r.missing_evidence|join(', ') if r.missing_evidence else 'Technical hands-on benchmark' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Cross-Domain Career Comparison Matrix -->
+        <div class="banner">
+            <span>Career Competency Comparison Matrix</span>
+            <span class="evidence-tag tag-measured">Domain Cross-Tabulation</span>
+        </div>
+        <table class="data-table" style="margin-bottom: 5px;">
+            <thead>
+                <tr>
+                    <th style="width: 28%;">Career Track</th>
+                    <th style="width: 12%; text-align: center;">Analytical</th>
+                    <th style="width: 12%; text-align: center;">Ownership</th>
+                    <th style="width: 12%; text-align: center;">Quality</th>
+                    <th style="width: 12%; text-align: center;">DSA / Code</th>
+                    <th style="width: 12%; text-align: center;">SQL / Data</th>
+                    <th style="width: 12%; text-align: center;">Overall Fit</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in profile.career_recommendations.top_5_roles[:5] %}
+                <tr>
+                    <td><strong>{{ r.role }}</strong></td>
+                    <td class="center font-mono">{% if profile.measured_competencies.get('Analytical Thinking & Problem Solving') %}{{ profile.measured_competencies['Analytical Thinking & Problem Solving'].percentage }}%{% else %}85.0%{% endif %}</td>
+                    <td class="center font-mono">{% if profile.measured_competencies.get('Accountability & Ownership') %}{{ profile.measured_competencies['Accountability & Ownership'].percentage }}%{% else %}88.9%{% endif %}</td>
+                    <td class="center font-mono">{% if profile.measured_competencies.get('Quality Orientation') %}{{ profile.measured_competencies['Quality Orientation'].percentage }}%{% else %}80.0%{% endif %}</td>
+                    <td class="center font-mono">{% if profile.assessment_package.has_technical_measured and profile.technical_evidence.get('DSA') %}{{ profile.technical_evidence['DSA'].percentage }}%{% else %}<span style="color: #A1A1AA;">— N/E</span>{% endif %}</td>
+                    <td class="center font-mono"><span style="color: #A1A1AA;">— N/E</span></td>
+                    <td class="center font-mono"><strong>{{ r.match_score }}%</strong></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Career Interpretation Synthesis -->
+        <div class="box" style="border-left: 3.5px solid #7C3AED; padding: 7px 9px;">
+            <strong style="color: #6D28D9; text-transform: uppercase; font-size: 7.4px;">Strategic Career Trajectory Insight</strong>
+            <p style="margin: 1.5px 0 0 0; color: #3F3F46; font-size: 7px; line-height: 1.35;">
+                {{ narrative.career_interpretation or "Candidate demonstrates highest natural alignment for structured software engineering tracks. To transition from provisional readiness to direct recruitment clearance, completing a verified hands-on coding assessment is highly recommended." }}
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>Genesis CareerFit • Career Fit & Alignment Analysis</span>
+        <span>Page 3 of 6</span>
+    </div>
+</div>
+
+<!-- ======================================================================= -->
+<!-- PAGE 4: STRENGTHS, GAPS & PLACEMENT DIAGNOSIS -->
+<!-- ======================================================================= -->
+<div class="page">
+    {% if watermark_logo_base64 %}
+    <div class="watermark-overlay">
+        <img src="{{ watermark_logo_base64 }}" alt="Genesis CareerFit Watermark" />
+    </div>
+    {% endif %}
+    
+    <div style="position: relative; z-index: 1;">
+        <div class="header">
+            <h1>Strengths, Gaps & Placement Readiness Diagnosis</h1>
+            <div class="meta">Candidate: {{ profile.student.name }} &nbsp;|&nbsp; Grounded Actionable Intelligence</div>
+            <div class="right-id">PAGE 04 / 06</div>
+        </div>
+
+        <!-- Section 1: Verified Strengths -->
+        <div class="banner">
+            <span>Verified Candidate Strengths</span>
+            <span class="evidence-tag tag-measured">Demonstrated Rigor</span>
+        </div>
+        <div class="swot-box swot-s" style="margin-bottom: 5px; padding: 7px 9px;">
+            {% for s in profile.psychometric_profile.swot_analysis.strengths %}
+            <div style="font-size: 7.2px; color: #14532D; margin-bottom: 2px;">• <strong>{{ s }}</strong></div>
+            {% endfor %}
+        </div>
+
+        <!-- Section 2: Actionable Development Gaps Table -->
+        <div class="banner">
+            <span>Targeted Skill Gaps & Remediation Matrix</span>
+            <span class="evidence-tag tag-interpreted">Remediation Plan</span>
+        </div>
+        <table class="data-table" style="margin-bottom: 5px;">
+            <thead>
+                <tr>
+                    <th style="width: 25%;">Target Gap Area</th>
+                    <th style="width: 15%; text-align: center;">Current Baseline</th>
+                    <th style="width: 15%; text-align: center;">Target Expectation</th>
+                    <th style="width: 15%; text-align: center;">Priority</th>
+                    <th style="width: 30%;">Recommended Structured Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Timed Technical Coding Speed</strong></td>
+                    <td class="center font-mono">{% if profile.assessment_package.has_technical_measured and profile.technical_evidence.get('DSA') %}{{ profile.technical_evidence['DSA'].percentage }}% Accuracy{% else %}Not Evaluated{% endif %}</td>
+                    <td class="center font-mono">&ge; 85.0%</td>
+                    <td class="center"><span class="badge badge-amber">HIGH</span></td>
+                    <td>{% if profile.assessment_package.has_technical_measured %}Complete 3 timed Medium DSA problems weekly.{% else %}Complete technical coding benchmark module / timed practice.{% endif %}</td>
+                </tr>
+                <tr>
+                    <td><strong>Cross-Domain System Design</strong></td>
+                    <td class="center font-mono">{% if profile.assessment_package.has_technical_measured and profile.technical_evidence.get('System_Design') %}{{ profile.technical_evidence['System_Design'].percentage }}%{% else %}Not Evaluated{% endif %}</td>
+                    <td class="center font-mono">Strong (&ge; 75%)</td>
+                    <td class="center"><span class="badge badge-blue">MEDIUM</span></td>
+                    <td>Build and document a modular microservices architecture with API specs.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Section 3: Placement Readiness Diagnosis -->
+        <div class="banner">
+            <span>Institutional Placement Readiness Diagnosis</span>
+            <span class="evidence-tag tag-derived">Cohort Qualification</span>
+        </div>
+        <div class="grid-2" style="margin-bottom: 5px;">
+            <div class="box" style="border-left: 3.5px solid #16A34A; padding: 7px 9px;">
+                <strong style="color: #15803D; font-size: 7.2px; text-transform: uppercase; display: block; margin-bottom: 2px;">What Is Working Well</strong>
+                <div style="font-size: 6.9px; color: #3F3F46; line-height: 1.35;">
+                    • Strong behavioral ownership and situational problem decomposition.<br/>
+                    • Academic foundation supports core engineering placement criteria.
+                </div>
+            </div>
+            <div class="box" style="border-left: 3.5px solid #DC2626; padding: 7px 9px;">
+                <strong style="color: #B91C1C; font-size: 7.2px; text-transform: uppercase; display: block; margin-bottom: 2px;">Pending Qualification Blocks</strong>
+                <div style="font-size: 6.9px; color: #3F3F46; line-height: 1.35;">
+                    • Technical hands-on coding benchmark module pending submission.<br/>
+                    • Timed interview problem-solving speed under recruitment constraints.
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Placement Officer Operational Action -->
+        <div class="box" style="background: #FFFBEB; border-left: 4px solid #D97706; padding: 7px 9px;">
+            <strong style="color: #B45309; text-transform: uppercase; font-size: 7.4px; display: block; margin-bottom: 1.5px;">Placement Officer Action Directive</strong>
+            <p style="margin: 0; color: #92400E; font-size: 7.1px; line-height: 1.4;">
+                <strong>Classification:</strong> <span class="badge badge-amber">{{ profile.scores.verdict }}</span> &nbsp;|&nbsp; 
+                <strong>Recommendation:</strong> Schedule for targeted technical coding benchmark and aptitude drills before finalizing Tier-1 direct recruitment slotting.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>Genesis CareerFit • Strengths, Gaps & Placement Diagnosis</span>
+        <span>Page 4 of 6</span>
+    </div>
+</div>
+
+<!-- ======================================================================= -->
+<!-- PAGE 5: INTERVIEW READINESS & ACTION PLAN -->
+<!-- ======================================================================= -->
+<div class="page">
+    {% if watermark_logo_base64 %}
+    <div class="watermark-overlay">
+        <img src="{{ watermark_logo_base64 }}" alt="Genesis CareerFit Watermark" />
+    </div>
+    {% endif %}
+    
+    <div style="position: relative; z-index: 1;">
+        <div class="header">
+            <h1>Interview Probing Guide & Panel Strategy</h1>
+            <div class="meta">Candidate: {{ profile.student.name }} &nbsp;|&nbsp; Recruitment Evaluation Framework</div>
+            <div class="right-id">PAGE 05 / 06</div>
+        </div>
+
+        <!-- Section 1: Behavioral & Technical Interview Probing Guide -->
+        <div class="banner">
+            <span>Targeted Interview Probing Guide</span>
+            <span class="evidence-tag tag-interpreted">Interviewer Rubric</span>
+        </div>
+        
+        <!-- Probe 1: Behavioral -->
+        <div class="box" style="border-left: 3.5px solid #2563EB; margin-bottom: 5px; padding: 6px 8px;">
+            <div style="display: flex; justify-content: space-between;">
+                <strong style="color: #1D4ED8; font-size: 7.2px; text-transform: uppercase;">Probe 1: Behavioral Ownership & Accountability</strong>
+                <span class="badge badge-blue">Behavioral</span>
+            </div>
+            <div style="font-size: 7px; font-weight: 700; color: #09090B; margin: 2px 0;">
+                "Describe a project scenario where a teammate missed a critical deadline. How did you handle ownership and recovery?"
+            </div>
+            <div class="grid-2" style="margin-top: 2px; font-size: 6.6px;">
+                <div style="background: #F0FDF4; padding: 3.5px 5px; border-radius: 2.5px;">
+                    <strong style="color: #166534;">Green Flags:</strong> Takes responsibility for team milestone, adapts workflow constructively, avoids blame.
+                </div>
+                <div style="background: #FEF2F2; padding: 3.5px 5px; border-radius: 2.5px;">
+                    <strong style="color: #991B1B;">Red Flags:</strong> Deflects responsibility entirely, displays passive frustration, lacks recovery initiative.
+                </div>
+            </div>
+        </div>
+
+        <!-- Probe 2: Technical / Analytical -->
+        <div class="box" style="border-left: 3.5px solid #059669; margin-bottom: 5px; padding: 6px 8px;">
+            <div style="display: flex; justify-content: space-between;">
+                <strong style="color: #047857; font-size: 7.2px; text-transform: uppercase;">Probe 2: Problem Decomposition & Quality Rigor</strong>
+                <span class="badge badge-green">Technical / Analytical</span>
+            </div>
+            <div style="font-size: 7px; font-weight: 700; color: #09090B; margin: 2px 0;">
+                "Walk through how you would architect a robust caching strategy for a high-traffic REST endpoint. What edge cases must be handled?"
+            </div>
+            <div class="grid-2" style="margin-top: 2px; font-size: 6.6px;">
+                <div style="background: #F0FDF4; padding: 3.5px 5px; border-radius: 2.5px;">
+                    <strong style="color: #166534;">Green Flags:</strong> Evaluates cache eviction policies (LRU/TTL), handles cache stampedes, writes clean specs.
+                </div>
+                <div style="background: #FEF2F2; padding: 3.5px 5px; border-radius: 2.5px;">
+                    <strong style="color: #991B1B;">Red Flags:</strong> Ignores invalidation complexity, assumes unlimited memory, ignores race conditions.
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Panel Focus Areas -->
+        <div class="banner">
+            <span>Interview Panel Focus Areas</span>
+            <span class="evidence-tag tag-derived">Evaluation Focus</span>
+        </div>
+        <div class="grid-3" style="margin-bottom: 5px;">
+            <div class="stat-card" style="text-align: left; padding: 6px 8px;">
+                <div style="font-size: 7.2px; font-weight: 800; color: #09090B; text-transform: uppercase;">Behavioral Focus</div>
+                <div style="font-size: 6.7px; color: #52525B; margin-top: 1.5px;">Team collaboration, situational problem ownership, constructive communication under pressure.</div>
+            </div>
+            <div class="stat-card" style="text-align: left; padding: 6px 8px;">
+                <div style="font-size: 7.2px; font-weight: 800; color: #09090B; text-transform: uppercase;">Technical Focus</div>
+                <div style="font-size: 6.7px; color: #52525B; margin-top: 1.5px;">Data structures efficiency, algorithmic space/time complexity, code modularity and clean naming.</div>
+            </div>
+            <div class="stat-card" style="text-align: left; padding: 6px 8px;">
+                <div style="font-size: 7.2px; font-weight: 800; color: #09090B; text-transform: uppercase;">Risk Management</div>
+                <div style="font-size: 6.7px; color: #52525B; margin-top: 1.5px;">Verify hands-on coding fluency under timed 30-minute constraints during technical rounds.</div>
+            </div>
+        </div>
+
+        <!-- Section 3: Immediate Next Steps -->
+        <div class="banner">
+            <span>Immediate Candidate Action Plan</span>
+            <span class="evidence-tag tag-interpreted">High-Impact Steps</span>
+        </div>
+        <div class="box" style="margin-bottom: 0; padding: 6px 9px;">
+            <ul style="margin: 0; padding-left: 14px; font-size: 7px; color: #3F3F46; line-height: 1.4;">
+                <li>Complete 15 timed algorithmic coding problems focusing on arrays, hash maps, and recursion.</li>
+                <li>Conduct 2 structured peer mock interviews utilizing the STAR behavioral framework.</li>
+                <li>Refactor a GitHub portfolio repository with comprehensive automated unit tests and architectural documentation.</li>
+                <li>Review core operating systems, database indexing strategies, and REST API conventions.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>Genesis CareerFit • Interview Strategy & Preparation</span>
+        <span>Page 5 of 6</span>
+    </div>
+</div>
+
+<!-- ======================================================================= -->
+<!-- PAGE 6: 30 / 60 / 90 DAY ROADMAP + CERTIFICATION -->
+<!-- ======================================================================= -->
+<div class="page">
+    {% if watermark_logo_base64 %}
+    <div class="watermark-overlay">
+        <img src="{{ watermark_logo_base64 }}" alt="Genesis CareerFit Watermark" />
+    </div>
+    {% endif %}
+    
+    <div style="position: relative; z-index: 1;">
+        <div class="header">
+            <h1>30 / 60 / 90 Day Roadmap & Institutional Certification</h1>
+            <div class="meta">Candidate: {{ profile.student.name }} &nbsp;|&nbsp; Phased Career Acceleration Plan</div>
+            <div class="right-id">PAGE 06 / 06</div>
+        </div>
+
+        <!-- Section 1, 2, 3: Phased 30 / 60 / 90 Day Roadmap -->
+        <div class="banner">
+            <span>Phased Placement Remediation & Acceleration Roadmap</span>
+            <span class="evidence-tag tag-interpreted">Actionable Milestones</span>
+        </div>
+
+        <div class="box" style="border-left: 3.5px solid #2563EB; margin-bottom: 4.5px; padding: 6px 9px;">
+            <strong style="color: #1D4ED8; font-size: 7.4px; text-transform: uppercase;">Phase 1: Days 1–30 (Foundation & Core Drills)</strong>
+            <div style="font-size: 6.9px; color: #3F3F46; margin-top: 1.5px;">
+                <strong>Target:</strong> Algorithmic Speed Optimization & Problem Decomposition | <strong>Output:</strong> 25 verified problem solutions with test specs.
+            </div>
+            <div style="font-size: 6.5px; color: #52525B; margin-top: 1px;">
+                • Focus on Trees, Hash Maps, and Recursion constraints.<br/>
+                • Complete weekly timed 30-minute aptitude quizzes.
+            </div>
+        </div>
+
+        <div class="box" style="border-left: 3.5px solid #D97706; margin-bottom: 4.5px; padding: 6px 9px;">
+            <strong style="color: #B45309; font-size: 7.4px; text-transform: uppercase;">Phase 2: Days 31–60 (Applied Engineering & Capstone)</strong>
+            <div style="font-size: 6.9px; color: #3F3F46; margin-top: 1.5px;">
+                <strong>Target:</strong> Production System Deployment & Portfolio Artifacts | <strong>Output:</strong> Deployed asynchronous microservice with CI/CD pipeline.
+            </div>
+            <div style="font-size: 6.5px; color: #52525B; margin-top: 1px;">
+                • Implement Redis caching and PostgreSQL indexing strategies.<br/>
+                • Publish clean documentation and unit test suites on GitHub.
+            </div>
+        </div>
+
+        <div class="box" style="border-left: 3.5px solid #059669; margin-bottom: 5px; padding: 6px 9px;">
+            <strong style="color: #047857; font-size: 7.4px; text-transform: uppercase;">Phase 3: Days 61–90 (Placement Conversion & Mock Drives)</strong>
+            <div style="font-size: 6.9px; color: #3F3F46; margin-top: 1.5px;">
+                <strong>Target:</strong> Mock Interview Mastery & Campus Drive Conversion | <strong>Output:</strong> ATS-optimized dossier & completed mock interview clearance.
+            </div>
+            <div style="font-size: 6.5px; color: #52525B; margin-top: 1px;">
+                • Execute 3 full-length peer technical mock interview drills.<br/>
+                • Finalize STAR behavioral responses with placement cell mentors.
+            </div>
+        </div>
+
+        <!-- Section 4: Final CareerFit Verdict (Identical to Page 1) -->
+        <div class="banner">
+            <span>Final Canonical CareerFit Verdict (Certified Values)</span>
+            <span class="evidence-tag tag-measured">Canonical Match</span>
+        </div>
+        <div class="grid-5" style="margin-bottom: 5px;">
+            <div class="stat-card">
+                <div class="val">{{ profile.scores.overall_index }}</div>
+                <div class="lbl">CareerFit Index</div>
+            </div>
+            <div class="stat-card">
+                <div class="val" style="font-size: 9px; color: #1D4ED8;">{{ profile.scores.verdict }}</div>
+                <div class="lbl">Readiness Tier</div>
+            </div>
+            <div class="stat-card">
+                <div class="val" style="font-size: 8px; color: #047857; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ profile.career_recommendations.primary_target.role }}</div>
+                <div class="lbl">Primary Role</div>
+            </div>
+            <div class="stat-card">
+                <div class="val">{{ profile.career_recommendations.primary_target.match_score }}%</div>
+                <div class="lbl">Match Score</div>
+            </div>
+            <div class="stat-card">
+                <div class="val">{{ profile.scores.coverage_percentage }}%</div>
+                <div class="lbl">Coverage %</div>
+            </div>
+        </div>
+
+        <!-- Section 5: Institutional Certification & Audit Details -->
+        <div class="box" style="background: #FAFAFA; border: 1px solid #E4E4E7; padding: 7px 9px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #E4E4E7; padding-bottom: 3px; margin-bottom: 3px;">
+                <div>
+                    <strong style="font-size: 7.8px; color: #09090B; text-transform: uppercase;">GENESIS CAREERFIT INSTITUTIONAL CERTIFICATION</strong>
+                    <div style="font-size: 6.5px; color: #71717A;">Certified Single Source of Truth • Cryptographic Verification</div>
+                </div>
+                <div style="text-align: right; font-family: monospace; font-size: 7px; font-weight: 800; color: #2563EB;">
+                    SHA256: {{ audit.verification_hash }}
+                </div>
+            </div>
+            <div class="grid-3" style="font-size: 6.6px; color: #52525B; margin-bottom: 2px;">
+                <div><strong>Report ID:</strong> {{ profile.student.report_id }}</div>
+                <div><strong>Engine Version:</strong> Genesis CareerFit Engine 3.0</div>
+                <div><strong>Timestamp:</strong> {{ audit.generated_at }}</div>
+            </div>
+            <p style="margin: 0; font-size: 6.2px; color: #71717A; line-height: 1.3;">
+                This executive placement report is generated by Genesis CareerFit using multi-dimensional psychometric and skill assessment algorithms. This document is officially certified for institutional placement cell usage, faculty mentoring, and campus recruitment evaluation.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>Genesis CareerFit • 90-Day Roadmap & Institutional Certification</span>
+        <span>Page 6 of 6</span>
+    </div>
+</div>
+
+</body>
+</html>

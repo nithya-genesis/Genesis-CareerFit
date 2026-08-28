@@ -1,0 +1,34 @@
+<div class="page">
+  <div class="header-bar">
+    <div>
+      <div class="section-title">Technical Assessment Breakdown</div>
+      <div style="font-size: 8pt; color: #6B7280;">Branch-aware technical proficiencies and question-level metrics</div>
+    </div>
+    <div style="font-size: 8pt; font-weight: bold; color: #0B0B0B;">SECTION 02</div>
+  </div>
+
+  <table class="table-custom">
+    <thead>
+      <tr>
+        <th>Technical Domain</th>
+        <th>Proficiency %</th>
+        <th>Proficiency Tier</th>
+        <th>Competency Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for dom, ddata in validated_metrics.technical_scores.items() %}
+      <tr>
+        <td><strong>{{ dom }}</strong></td>
+        <td><strong>{{ ddata.percentage }}%</strong></td>
+        <td>{{ ddata.tier }}</td>
+        <td><span class="badge badge-success">Strong Area</span></td>
+      </tr>
+      {% else %}
+      <tr>
+        <td colspan="4" style="text-align: center; color: #6B7280;">No technical assessment data ingested. Domain marked Not Evaluated.</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
