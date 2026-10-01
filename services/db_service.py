@@ -77,9 +77,7 @@ STORAGE_MODE = os.getenv("STORAGE_MODE", "local").strip()
 
 DEFAULT_INST_CODE = os.getenv("DEFAULT_INSTITUTION_CODE", "EIT-MAIN")
 DEFAULT_INST_NAME = os.getenv("DEFAULT_INSTITUTION_NAME", "Engineering Institute of Technology")
-DEFAULT_INST_SLUG = "eit-main"
-
-DB_FILE_PATH = os.path.join(os.path.dirname(__file__), "..", "genesis_careerfit.db")
+DB_FILE_PATH = os.getenv("DATABASE_PATH") or os.path.join(os.path.dirname(__file__), "..", "genesis_careerfit.db")
 
 class DatabaseConfigurationError(Exception):
     """Raised when the selected database backend is misconfigured or unreachable."""

@@ -8,6 +8,7 @@ import hashlib
 import base64
 import tempfile
 import subprocess
+from pathlib import Path
 from datetime import datetime, timezone
 from typing import Dict, Any, Optional, List
 import jinja2
@@ -50,11 +51,24 @@ except ImportError:
 
 def _find_browser_executable() -> Optional[str]:
     """
-    Locates Microsoft Edge or Google Chrome executable for headless PDF compilation on Windows.
+    Locates Chromium, Google Chrome, or Microsoft Edge executable for headless PDF compilation across Linux and Windows.
     """
+    env_chrome = os.environ.get("CHROME_PATH")
+    if env_chrome and os.path.exists(env_chrome):
+        return env_chrome
+
     candidates = [
-        shutil.which("msedge"),
+        shutil.which("chromium"),
+        shutil.which("chromium-browser"),
+        shutil.which("google-chrome"),
+        shutil.which("google-chrome-stable"),
         shutil.which("chrome"),
+        shutil.which("msedge"),
+        "/usr/bin/chromium",
+        "/usr/bin/chromium-browser",
+        "/usr/bin/google-chrome",
+        "/usr/bin/google-chrome-stable",
+        "/snap/bin/chromium",
         r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
         r"C:\Program Files\Microsoft\Edge\Application\msedge.exe",
         os.path.expandvars(r"%LOCALAPPDATA%\Microsoft\Edge\Application\msedge.exe"),
@@ -395,7 +409,7 @@ def generate_candidate_pdf(
             "--disable-dev-shm-usage",
             "--print-to-pdf-no-header",
             f"--print-to-pdf={pdf_path}",
-            f"file:///{temp_html_path.replace(os.sep, '/')}"
+            Path(temp_html_path).resolve().as_uri()
         ]
         
         proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=45)
@@ -449,7 +463,7 @@ def generate_placement_summary_pdf(
             "--disable-dev-shm-usage",
             "--print-to-pdf-no-header",
             f"--print-to-pdf={pdf_path}",
-            f"file:///{temp_html_path.replace(os.sep, '/')}"
+            Path(temp_html_path).resolve().as_uri()
         ]
         
         proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=45)

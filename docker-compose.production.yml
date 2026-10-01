@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  # ----------------------------------------------------------------------------
+  # Genesis CareerFit - Backend API & Report Generation Service
+  # ----------------------------------------------------------------------------
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: genesis_careerfit_api
+    restart: unless-stopped
+    env_file:
+      - .env.production
+    environment:
+      - DATABASE_PATH=/data/genesis_careerfit.db
+      - OUTPUTS_DIR=/data/outputs
+      - CHROME_PATH=/usr/bin/chromium
+      - HOST=0.0.0.0
+      - PORT=8000
+    volumes:
+      # Persistent storage volume for SQLite database and uploaded/generated artifacts
+      - careerfit_data:/data
+    networks:
+      - careerfit_internal
+    expose:
+      - "8000"
+
+  # ----------------------------------------------------------------------------
+  # Genesis CareerFit - Nginx Web Server & Reverse Proxy
+  # ----------------------------------------------------------------------------
+  web:
+    image: nginx:alpine
+    container_name: genesis_careerfit_web
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      # Production React build static assets
+      - ./client/dist:/usr/share/nginx/html:ro
+      # Nginx configuration
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - api
+    networks:
+      - careerfit_internal
+
+# ------------------------------------------------------------------------------
+# Persistent Volumes & Networks
+# ------------------------------------------------------------------------------
+volumes:
+  careerfit_data:
+    name: genesis_careerfit_data
+
+networks:
+  careerfit_internal:
+    name: genesis_careerfit_internal

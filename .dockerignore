@@ -1,0 +1,35 @@
+# Version Control
+.git/
+.gitignore
+
+# Python Virtual Environments & Bytecode
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node & Frontend Source (built into client/dist)
+node_modules/
+client/node_modules/
+client/src/
+client/.vite/
+
+# Development & Scratch Artifacts
+scratch/
+tests/
+*.log
+
+# Databases & Runtime Outputs (Mounted from persistent storage in production)
+genesis_careerfit.db
+genesis_careerfit_test.db
+outputs/
+
+# Environment Secrets
+.env
+.env.local
+.env.*.local

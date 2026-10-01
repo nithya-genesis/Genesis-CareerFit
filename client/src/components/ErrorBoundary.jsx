@@ -24,7 +24,7 @@ export default class ErrorBoundary extends React.Component {
 
   render() {
     if (this.state.hasError) {
-      const isDev = import.meta.env.DEV || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      const isDev = import.meta.env.DEV || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' || window.location.hostname==='187.127.190.215';
       return (
         <div className="min-h-screen bg-[#F7F7F5] flex items-center justify-center p-6 font-sans">
           <div className="max-w-md w-full bg-white border border-genesis-border rounded-2xl shadow-elevated p-8 text-center space-y-6">

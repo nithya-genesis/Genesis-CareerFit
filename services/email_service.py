@@ -66,6 +66,7 @@ class SMTPEmailProvider(EmailProvider):
     @staticmethod
     def _load_config() -> Dict[str, Any]:
         frontend_base = (
+            os.getenv("APP_BASE_URL") or
             os.getenv("FRONTEND_BASE_URL") or 
             os.getenv("FRONTEND_URL") or 
             "http://localhost:5173"

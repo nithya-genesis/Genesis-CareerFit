@@ -70,15 +70,18 @@ app = FastAPI(
 )
 
 # CORS Configuration
+_cors_env = os.getenv("CORS_ORIGINS")
+_allowed_origins = [o.strip() for o in _cors_env.split(",") if o.strip()] if _cors_env else ["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:8000", "http://127.0.0.1:8000", "*"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:8000", "http://127.0.0.1:8000", "*"],
+    allow_origins=_allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-OUTPUT_DIR = os.path.abspath("outputs")
+OUTPUT_DIR = os.path.abspath(os.getenv("OUTPUTS_DIR", "outputs"))
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 class LoginRequest(BaseModel):
